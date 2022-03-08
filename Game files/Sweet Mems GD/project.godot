@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Sweet Memories"
+config/icon="res://icon.png"
+
+[layer_names]
+
+2d_physics/layer_1="World"
+2d_physics/layer_5="PlayerHit"
+2d_physics/layer_6="PlayerHurt"
+2d_physics/layer_7="EnemHit"
+2d_physics/layer_8="EnemHurt"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
