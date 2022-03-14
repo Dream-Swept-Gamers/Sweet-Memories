@@ -41,10 +41,11 @@ func move():
 	
 	if Input.is_action_pressed("Move_Left"):
 		cur_velocity.x -= speed
-		animator.animation_set_next("Move_Left")
-	if Input.is_action_pressed("Move_Right"):
+		animator.play("Move_Left")
+	else: if Input.is_action_pressed("Move_Right"):
 		cur_velocity.x += speed
-		animator.animation_set_next("Move_Left")
+		animator.play("Move_Right")
+	else: animator.play("Idle")
 	if Input.is_action_just_pressed("Move_Jump") and can_jump:
 		cur_velocity.y -= jump_impulse
 		can_jump = false
