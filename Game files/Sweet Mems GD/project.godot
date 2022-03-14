@@ -49,6 +49,7 @@ Move_Attack={
 [layer_names]
 
 2d_physics/layer_1="World"
+2d_physics/layer_2="EnemStop"
 2d_physics/layer_5="PlayerHit"
 2d_physics/layer_6="PlayerHurt"
 2d_physics/layer_7="EnemHit"
