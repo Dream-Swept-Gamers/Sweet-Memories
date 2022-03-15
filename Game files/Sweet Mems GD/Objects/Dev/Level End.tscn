@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Objects/Dev/star.png" type="Texture" id=1]
+[ext_resource path="res://Objects/Dev/Level End.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 38, 10 )
+
+[sub_resource type="Curve" id=2]
+max_value = 1.5
+bake_resolution = 10
+_data = [ Vector2( 0, 0.526705 ), 0.0, -0.209091, 0, 0, Vector2( 0.913043, 0.709091 ), -1.71675, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=3]
+curve = SubResource( 2 )
+
+[sub_resource type="ParticlesMaterial" id=4]
+lifetime_randomness = 0.32
+trail_divisor = 2
+trail_size_modifier = SubResource( 3 )
+emission_shape = 1
+emission_sphere_radius = 15.0
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+angular_velocity = 20.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 1.0
+radial_accel = 10.0
+radial_accel_random = 1.0
+hue_variation = 0.3
+hue_variation_random = 0.2
+
+[node name="Level End" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 8, 0 )
+amount = 15
+lifetime = 3.0
+randomness = 0.2
+local_coords = false
+process_material = SubResource( 4 )
+texture = ExtResource( 1 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

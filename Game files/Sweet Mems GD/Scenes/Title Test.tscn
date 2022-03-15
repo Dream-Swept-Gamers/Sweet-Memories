@@ -1,27 +1,49 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Title Test.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Title Image.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
+"_edit_horizontal_guides_": [ -16.0 ],
 "_edit_lock_": true
 }
 
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -20.0
+margin_right = 20.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="AspectRatioContainer"]
+position = Vector2( 27, 186 )
+scale = Vector2( 0.155714, 0.1595 )
+texture = ExtResource( 2 )
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -63.0
 margin_top = 14.0
 margin_right = 63.0
 margin_bottom = 61.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[center][u]Ensueños
 [/u]Sweet Memories[/center][center]﻿[/center]"
 text = "Ensueños
 Sweet Memories﻿"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Creds" type="Button" parent="."]
 anchor_left = 0.5
@@ -33,6 +55,9 @@ margin_top = -10.0
 margin_right = -97.0
 margin_bottom = 31.0
 text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Level_Sel" type="Button" parent="."]
 anchor_left = 0.5

@@ -6,6 +6,9 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="back" type="Button" parent="."]
 margin_left = 13.0
@@ -15,57 +18,69 @@ margin_bottom = 48.0
 text = "Title Screen"
 
 [node name="Level 1" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 68.0
-margin_top = -42.0
-margin_right = 126.0
-margin_bottom = -22.0
+margin_left = -140.0
+margin_top = -55.0
+margin_right = -82.0
+margin_bottom = -33.0
 text = "Level 1"
 
 [node name="Level 2" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 165.0
-margin_top = -42.0
-margin_right = 223.0
-margin_bottom = -22.0
+margin_left = -30.0
+margin_top = -54.0
+margin_right = 28.0
+margin_bottom = -34.0
 text = "Level 2"
 
 [node name="Level 3" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 259.0
-margin_top = -42.0
-margin_right = 317.0
-margin_bottom = -22.0
+margin_left = 64.0
+margin_top = -54.0
+margin_right = 122.0
+margin_bottom = -34.0
 text = "Level 3"
 
 [node name="Level 4" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 353.0
-margin_top = -42.0
-margin_right = 411.0
-margin_bottom = -22.0
+margin_left = -88.0
+margin_top = -7.0
+margin_right = -30.0
+margin_bottom = 13.0
 text = "Level 4"
 
 [node name="Level 5" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 443.0
-margin_top = -42.0
-margin_right = 501.0
-margin_bottom = -22.0
+margin_left = 16.0
+margin_top = -6.0
+margin_right = 74.0
+margin_bottom = 14.0
 text = "Level 5"
 
 [node name="Level 6" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 68.0
-margin_top = 48.0
-margin_right = 126.0
-margin_bottom = 68.0
+margin_left = -43.0
+margin_top = 45.0
+margin_right = 34.0
+margin_bottom = 65.0
 text = "Test Level"
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

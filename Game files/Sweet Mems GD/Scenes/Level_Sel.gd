@@ -10,22 +10,27 @@ func _on_back_pressed():
 
 
 func _on_Level_1_pressed():
+	get_tree().change_scene("res://Scenes/Levels/Level 1.tscn")
 	pass # Replace with function body.
 
 
 func _on_Level_2_pressed():
+	get_tree().change_scene("res://Scenes/Levels/Level 2.tscn")
 	pass # Replace with function body.
 
 
 func _on_Level_3_pressed():
+	get_tree().change_scene("res://Scenes/Levels/Level 3.tscn")
 	pass # Replace with function body.
 
 
 func _on_Level_4_pressed():
+	get_tree().change_scene("res://Scenes/Levels/Level 4.tscn")
 	pass # Replace with function body.
 
 
 func _on_Level_5_pressed():
+	get_tree().change_scene("res://Scenes/Levels/Level 5.tscn")
 	pass # Replace with function body.
 
 
