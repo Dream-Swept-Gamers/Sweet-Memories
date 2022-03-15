@@ -65,6 +65,6 @@ func is_grounded():
 		return false
 
 
-func _on_HitBox_area_entered(area):
+
+func _on_KillBox_area_entered(area):
 	get_tree().change_scene("res://Scenes/Death.tscn")
-	pass # Replace with function body.

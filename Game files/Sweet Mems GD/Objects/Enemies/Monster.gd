@@ -18,6 +18,7 @@ var can_jump = true
 
 var move_type = 0
 var random = RandomNumberGenerator.new()
+var die = false
 
 onready var wall_ray = get_node("CollisionShape2D/RayCast2D")
 onready var ground_ray = get_node("CollisionShape2D/RayCast2D2")
@@ -40,10 +41,19 @@ func _physics_process(delta):
 		
 		ATTACK: attack()
 		
-	
 	cur_velocity = move_and_slide(cur_velocity)
 
 func move():
+	if die:
+		pass
+	
+	if player_detect.is_colliding() and not die:
+		if move_type == 1:
+			move_type = 4
+			animator.play("Attack_Left")
+		elif move_type == 2:
+			move_type = 4
+			animator.play("Attack_Right")
 	
 	if move_type == 1:
 		cur_velocity.x -= speed
@@ -52,9 +62,11 @@ func move():
 		cur_velocity.x += speed
 		animator.play("Move_Right")
 	
-	if wall_ray.is_colliding() and can_jump and move_type != 3:
+	if wall_ray.is_colliding() and can_jump and not move_type > 3:
 		cur_velocity.y -= jump_impulse
 		can_jump = false
+	
+
 	
 	if is_grounded() == true:
 		can_jump = true
@@ -78,3 +90,20 @@ func rand_move():
 func _on_Timer_timeout():
 	rand_move()
 	pass # Replace with function body.
+
+
+func _on_Area2D_area_entered(_area):
+	die = true
+	move_type = 3
+	move_time.stop()
+	animator.play("Death_1")
+	gravity = 0
+	cur_velocity.y = 0
+	pass # Replace with function body.
+
+
+func _on_AnimationPlayer_animation_finished(_anim_name):
+	if die:
+		queue_free()
+	elif _anim_name == "Attack_Left" or _anim_name == "Attack_Right":
+		rand_move()
