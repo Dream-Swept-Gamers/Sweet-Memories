@@ -1,0 +1,91 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Credits.gd" type="Script" id=1]
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Title" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 12.0
+bbcode_enabled = true
+bbcode_text = "[center][b][u]Ensueños[/u][/b]
+Sweet Memories
+
+Credits
+
+[u]Kimberly Serrano[/u]
+Project Lead
+Lead Director
+Character Art
+Character Designs
+\"[Insert Quote]\"
+
+[u]Dakota \"Valcuda\" Willey[/u]
+Sole Programmer
+Monster Art
+Ground Art
+UX Designer
+Level Design
+\"Game design is not easy.
+It's stressful at times, especially when programming,
+Despite that however, it's infinitely fun!\"
+
+[u]Brandin \"MayoMan\" Jasper[/u]
+Moral Support
+Tried His Best To Help
+\"[Insert Quote]\"
+
+[u]Brenden Levesque[/u]
+Cake Designer
+Background Designer
+\"[Insert Quote]\"
+
+
+Dream Swept Gamers Studios[/center]"
+text = "Ensueños
+Sweet Memories
+
+Credits
+
+Kimberly Serrano
+Project Lead
+Lead Director
+Character Art
+Character Designs
+\"[Insert Quote]\"
+
+Dakota \"Valcuda\" Willey
+Sole Programmer
+Monster Art
+Ground Art
+UX Designer
+Level Design
+\"Game design is not easy.
+It's stressful at times, especially when programming,
+Despite that however, it's infinitely fun!\"
+
+Brandin \"MayoMan\" Jasper
+Moral Support
+Tried His Best To Help
+\"[Insert Quote]\"
+
+Brenden Levesque
+Cake Designer
+Background Designer
+\"[Insert Quote]\"
+
+
+Dream Swept Gamers Studios"
+
+[node name="back" type="Button" parent="."]
+margin_left = 13.0
+margin_top = 15.0
+margin_right = 76.0
+margin_bottom = 48.0
+text = "Title Screen"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
