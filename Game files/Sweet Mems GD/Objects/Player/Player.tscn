@@ -262,4 +262,9 @@ process_mode = 0
 smoothing_enabled = true
 smoothing_speed = 10.0
 
+[node name="CanvasModulate" type="CanvasModulate" parent="Camera2D"]
+color = Color( 0.764706, 0.764706, 0.764706, 1 )
+
+[connection signal="area_entered" from="HitBox" to="." method="_on_HitBox_area_entered"]
+
 [editable path="HitBox"]

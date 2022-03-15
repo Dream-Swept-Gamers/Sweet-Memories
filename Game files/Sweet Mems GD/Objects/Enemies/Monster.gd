@@ -51,7 +51,6 @@ func move():
 	else: if move_type == 2:
 		cur_velocity.x += speed
 		animator.play("Move_Right")
-	else: animator.play("Idle")
 	
 	if wall_ray.is_colliding() and can_jump and move_type != 3:
 		cur_velocity.y -= jump_impulse

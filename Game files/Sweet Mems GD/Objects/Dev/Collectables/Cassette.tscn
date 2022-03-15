@@ -1,112 +1,95 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Objects/Dev/Collectables/shine.png" type="Texture" id=1]
 [ext_resource path="res://Objects/Dev/Collectables/Cassette.png" type="Texture" id=2]
+[ext_resource path="res://Objects/Dev/Collectables/Cassette.gd" type="Script" id=3]
+
+[sub_resource type="ParticlesMaterial" id=2]
+flag_disable_z = true
+spread = 50.0
+gravity = Vector3( 0, 50, 0 )
+orbit_velocity = 0.5
+orbit_velocity_random = 1.0
+hue_variation = 1.0
+hue_variation_random = 0.01
+
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+spread = 50.0
+gravity = Vector3( 0, -50, 0 )
+orbit_velocity = 0.5
+orbit_velocity_random = 1.0
+hue_variation = 1.0
+hue_variation_random = 0.01
+
+[sub_resource type="ParticlesMaterial" id=4]
+flag_disable_z = true
+spread = 50.0
+gravity = Vector3( 50, 0, 0 )
+orbit_velocity = 0.5
+orbit_velocity_random = 1.0
+hue_variation = 1.0
+hue_variation_random = 0.01
+
+[sub_resource type="ParticlesMaterial" id=5]
+flag_disable_z = true
+spread = 50.0
+gravity = Vector3( -50, 0, 0 )
+orbit_velocity = 0.5
+orbit_velocity_random = 1.0
+hue_variation = 1.0
+hue_variation_random = 0.01
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 10 )
 
-[node name="Node2D" type="Area2D"]
+[node name="Cassette" type="Area2D"]
 scale = Vector2( 0.5, 0.5 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Sprite"]
+[node name="CPUParticles2D" type="Particles2D" parent="Sprite"]
 z_index = -1
 amount = 5
 lifetime = 2.0
 preprocess = 5.0
 randomness = 0.2
-lifetime_randomness = 1.0
+process_material = SubResource( 2 )
 texture = ExtResource( 1 )
-emission_shape = 2
-emission_rect_extents = Vector2( 11, 6 )
-spread = 50.0
-gravity = Vector2( 0, 50 )
-angular_velocity = 10.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.5
-orbit_velocity_random = 1.0
-tangential_accel = 5.0
-tangential_accel_random = 1.0
-damping = 0.5
-damping_random = 0.2
-hue_variation = 1.0
-hue_variation_random = 0.01
 
-[node name="CPUParticles2D2" type="CPUParticles2D" parent="Sprite"]
+[node name="CPUParticles2D2" type="Particles2D" parent="Sprite"]
 z_index = -1
 amount = 5
 lifetime = 2.0
 preprocess = 5.0
 randomness = 0.2
-lifetime_randomness = 1.0
+process_material = SubResource( 3 )
 texture = ExtResource( 1 )
-emission_shape = 2
-emission_rect_extents = Vector2( 11, 6 )
-direction = Vector2( -1, 0 )
-spread = 50.0
-gravity = Vector2( 0, -50 )
-angular_velocity = 10.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.5
-orbit_velocity_random = 1.0
-tangential_accel = 5.0
-tangential_accel_random = 1.0
-damping = 0.5
-damping_random = 0.2
-hue_variation = 1.0
-hue_variation_random = 0.01
 
-[node name="CPUParticles2D3" type="CPUParticles2D" parent="Sprite"]
+[node name="CPUParticles2D3" type="Particles2D" parent="Sprite"]
 z_index = -1
 amount = 5
 lifetime = 2.0
 preprocess = 5.0
 randomness = 0.2
-lifetime_randomness = 1.0
+process_material = SubResource( 4 )
 texture = ExtResource( 1 )
-emission_shape = 2
-emission_rect_extents = Vector2( 11, 6 )
-direction = Vector2( -1, 0 )
-spread = 50.0
-gravity = Vector2( 50, 0 )
-angular_velocity = 10.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.5
-orbit_velocity_random = 1.0
-tangential_accel = 5.0
-tangential_accel_random = 1.0
-damping = 0.5
-damping_random = 0.2
-hue_variation = 1.0
-hue_variation_random = 0.01
 
-[node name="CPUParticles2D4" type="CPUParticles2D" parent="Sprite"]
+[node name="CPUParticles2D4" type="Particles2D" parent="Sprite"]
 z_index = -1
 amount = 5
 lifetime = 2.0
 preprocess = 5.0
 randomness = 0.2
-lifetime_randomness = 1.0
+process_material = SubResource( 5 )
 texture = ExtResource( 1 )
-emission_shape = 2
-emission_rect_extents = Vector2( 11, 6 )
-direction = Vector2( -1, 0 )
-spread = 50.0
-gravity = Vector2( -50, 0 )
-angular_velocity = 10.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.5
-orbit_velocity_random = 1.0
-tangential_accel = 5.0
-tangential_accel_random = 1.0
-damping = 0.5
-damping_random = 0.2
-hue_variation = 1.0
-hue_variation_random = 0.01
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource( 1 )
+
+[connection signal="area_entered" from="." to="." method="_on_Cassette_area_entered"]
