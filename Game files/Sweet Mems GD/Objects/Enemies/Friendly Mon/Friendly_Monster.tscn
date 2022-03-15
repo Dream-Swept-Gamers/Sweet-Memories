@@ -7,7 +7,7 @@
 [ext_resource path="res://Objects/Enemies/Friendly Mon/Friendly_Monster_walk.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 14, 15.8163 )
+extents = Vector2( 13, 15.3061 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Attack_Left"
