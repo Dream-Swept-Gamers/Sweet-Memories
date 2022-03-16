@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Discord",
+"language": "GDScript",
+"path": "res://discord_sdk/discord.gd"
+} ]
+_global_script_class_icons={
+"Discord": ""
+}
+
 [application]
 
 config/name="Sweet Memories"
