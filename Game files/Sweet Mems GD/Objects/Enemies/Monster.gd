@@ -62,9 +62,9 @@ func move():
 		cur_velocity.x += speed
 		animator.play("Move_Right")
 	
-#	if can_jump:
-#		cur_velocity.y -= jump_impulse
-#		can_jump = false
+	if wall_ray.is_colliding() and can_jump and not move_type > 2:
+		cur_velocity.y -= jump_impulse
+		can_jump = false
 	
 
 	
@@ -83,7 +83,7 @@ func is_grounded():
 		return false
 
 func rand_move():
-	move_type = random.randi_range(2, 8)
+	move_type = random.randi_range(0, 2)
 	move_time.start(random.randf_range(0.2, 1.8))
 	pass
 
