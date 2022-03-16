@@ -14,6 +14,10 @@ config/name="Sweet Memories"
 run/main_scene="res://Scenes/Title Test.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+FreeAccessInfo="*res://FreeAccessInfo.gd"
+
 [importer_defaults]
 
 texture={

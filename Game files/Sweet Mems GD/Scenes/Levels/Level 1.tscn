@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Objects/Ground/Grass2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/Dev/Level End.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Objects/Dev/Collectables/Cassette.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Objects/Player/GUI.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -44,6 +45,8 @@ position = Vector2( -792, -513 )
 
 [node name="Cassette3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 533, -342 )
+
+[node name="GUI" parent="." instance=ExtResource( 6 )]
 
 [editable path="Particles"]
 [editable path="Level End"]
