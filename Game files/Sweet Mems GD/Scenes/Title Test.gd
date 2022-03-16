@@ -5,6 +5,7 @@ onready var def_button = get_node("Creds")
 func _ready():
 	def_button.set_pressed_no_signal(true)
 	def_button.set_pressed_no_signal(false)
+	DiscordScript._ready()
 	pass
 
 
