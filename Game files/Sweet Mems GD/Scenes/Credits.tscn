@@ -7,15 +7,11 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Title" type="RichTextLabel" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 12.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[center][b][u]Ensueños[/u][/b]
 Sweet Memories
@@ -27,7 +23,6 @@ Project Lead
 Lead Director
 Character Art
 Character Designs
-\"[Insert Quote]\"
 
 [u]Dakota \"Valcuda\" Willey[/u]
 Sole Programmer
@@ -42,13 +37,13 @@ It wasn't easy, but it sure was fun!\"
 
 [u]Brandin \"MayoMan\" Jasper[/u]
 Moral Support
+Play Tester
 Tried His Best To Help
 \"Input good quote XD\"
 (Brandin, when asked for a quote)
 
 [u]Brenden Levesque[/u]
 Cake Designer
-\"[Insert Quote]\"
 
 
 Dream Swept Gamers Studios[/center]"
@@ -62,7 +57,6 @@ Project Lead
 Lead Director
 Character Art
 Character Designs
-\"[Insert Quote]\"
 
 Dakota \"Valcuda\" Willey
 Sole Programmer
@@ -77,13 +71,13 @@ It wasn't easy, but it sure was fun!\"
 
 Brandin \"MayoMan\" Jasper
 Moral Support
+Play Tester
 Tried His Best To Help
 \"Input good quote XD\"
 (Brandin, when asked for a quote)
 
 Brenden Levesque
 Cake Designer
-\"[Insert Quote]\"
 
 
 Dream Swept Gamers Studios"
@@ -107,9 +101,9 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="AspectRatioContainer"]
-position = Vector2( -85, -106 )
+position = Vector2( -95.3181, -117.905 )
 rotation = -0.139648
-scale = Vector2( 0.08, 0.08 )
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

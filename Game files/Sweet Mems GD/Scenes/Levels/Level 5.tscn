@@ -126,6 +126,21 @@ position = Vector2( 4480, 183 )
 [node name="Monster2" parent="Grass2" instance=ExtResource( 5 )]
 position = Vector2( 4343, 125 )
 
+[node name="Monster5" parent="Grass2" instance=ExtResource( 5 )]
+position = Vector2( 4309, 287 )
+
+[node name="Monster6" parent="Grass2" instance=ExtResource( 5 )]
+position = Vector2( 4696, 286 )
+
+[node name="Monster8" parent="Grass2" instance=ExtResource( 5 )]
+position = Vector2( 5563, 271 )
+
+[node name="Monster9" parent="Grass2" instance=ExtResource( 5 )]
+position = Vector2( 5563, 271 )
+
+[node name="Monster7" parent="Grass2" instance=ExtResource( 5 )]
+position = Vector2( 4494, 286 )
+
 [node name="Monster3" parent="Grass2" instance=ExtResource( 5 )]
 position = Vector2( 4591, 200 )
 
@@ -139,6 +154,41 @@ position = Vector2( 4803, 348 )
 position = Vector2( 4730, 233 )
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2( 54, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4588, 153 )
+
+[node name="CollisionShape2D" parent="Area2D10" index="0"]
+position = Vector2( 54, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4331, 75 )
+
+[node name="CollisionShape2D" parent="Area2D11" index="0"]
+position = Vector2( 54, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4264, 76 )
+
+[node name="CollisionShape2D" parent="Area2D12" index="0"]
+position = Vector2( 54, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4264, 76 )
+
+[node name="CollisionShape2D" parent="Area2D13" index="0"]
+position = Vector2( 54, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D14" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4233, 223 )
+
+[node name="CollisionShape2D" parent="Area2D14" index="0"]
 position = Vector2( 54, 0 )
 shape = SubResource( 4 )
 
@@ -172,6 +222,14 @@ position = Vector2( 5723, 136 )
 rotation = 1.57422
 
 [node name="CollisionShape2D" parent="Area2D8" index="0"]
+position = Vector2( 13.6436, -104.048 )
+shape = SubResource( 9 )
+
+[node name="Area2D15" parent="." instance=ExtResource( 8 )]
+position = Vector2( 5388, 197 )
+rotation = 1.57422
+
+[node name="CollisionShape2D" parent="Area2D15" index="0"]
 position = Vector2( 13.6436, -104.048 )
 shape = SubResource( 9 )
 
@@ -209,7 +267,6 @@ position = Vector2( -515, 644 )
 
 [node name="Monster2" parent="Area2D7/CollisionShape2D" index="1" instance=ExtResource( 6 )]
 position = Vector2( -6, 435 )
-jump_impulse = 800
 
 [node name="Cassette" parent="Area2D7" instance=ExtResource( 3 )]
 position = Vector2( 183, -173 )
@@ -234,9 +291,33 @@ position = Vector2( 319, -209 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollisionShape2D" parent="Area2D7/Level End/Area2D" index="0"]
-position = Vector2( 84, -38 )
+position = Vector2( 72, -2 )
 
 [node name="Particles2D" parent="Area2D7/Level End" index="1"]
+position = Vector2( 10, 46 )
+process_material = SubResource( 7 )
+texture = SubResource( 8 )
+
+[node name="Level End2" parent="Area2D7" instance=ExtResource( 7 )]
+position = Vector2( 319, -225 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CollisionShape2D" parent="Area2D7/Level End2/Area2D" index="0"]
+position = Vector2( 72, -2 )
+
+[node name="Particles2D" parent="Area2D7/Level End2" index="1"]
+position = Vector2( 10, 46 )
+process_material = SubResource( 7 )
+texture = SubResource( 8 )
+
+[node name="Level End3" parent="Area2D7" instance=ExtResource( 7 )]
+position = Vector2( 319, -242 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CollisionShape2D" parent="Area2D7/Level End3/Area2D" index="0"]
+position = Vector2( 72, -2 )
+
+[node name="Particles2D" parent="Area2D7/Level End3" index="1"]
 position = Vector2( 10, 46 )
 process_material = SubResource( 7 )
 texture = SubResource( 8 )
@@ -252,12 +333,20 @@ shape = SubResource( 11 )
 [editable path="Gas2"]
 [editable path="Gas3"]
 [editable path="Area2D"]
+[editable path="Area2D10"]
+[editable path="Area2D11"]
+[editable path="Area2D12"]
+[editable path="Area2D13"]
+[editable path="Area2D14"]
 [editable path="Area2D2"]
 [editable path="Area2D3"]
 [editable path="Area2D8"]
+[editable path="Area2D15"]
 [editable path="Area2D9"]
 [editable path="Area2D4"]
 [editable path="Area2D6"]
 [editable path="Area2D7"]
 [editable path="Area2D7/Level End"]
+[editable path="Area2D7/Level End2"]
+[editable path="Area2D7/Level End3"]
 [editable path="Area2D5"]
