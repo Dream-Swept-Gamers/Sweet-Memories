@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Monster_walk.png-6694416d2398f2b02a3e69c71c9356b5.stex"
+path="res://.import/front.png-db338678fabce628e6e861cdb6fcea5d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Enemies/Monster_walk.png"
-dest_files=[ "res://.import/Monster_walk.png-6694416d2398f2b02a3e69c71c9356b5.stex" ]
+source_file="res://Sprites/Entities/Player/front.png"
+dest_files=[ "res://.import/front.png-db338678fabce628e6e861cdb6fcea5d.stex" ]
 
 [params]
 

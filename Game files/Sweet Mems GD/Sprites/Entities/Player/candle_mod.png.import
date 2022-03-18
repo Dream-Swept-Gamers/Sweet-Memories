@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/right-walk.png-641a2c95b75f1c3fcf9186c153377cb0.stex"
+path="res://.import/candle_mod.png-033a7dc02fab396e5635585d55090e68.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Player/right-walk.png"
-dest_files=[ "res://.import/right-walk.png-641a2c95b75f1c3fcf9186c153377cb0.stex" ]
+source_file="res://Sprites/Entities/Player/candle_mod.png"
+dest_files=[ "res://.import/candle_mod.png-033a7dc02fab396e5635585d55090e68.stex" ]
 
 [params]
 

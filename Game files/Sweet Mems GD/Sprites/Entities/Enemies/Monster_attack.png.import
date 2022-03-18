@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dirt.png-de0b45b173848514e0d66d4888a1ef40.stex"
+path="res://.import/Monster_attack.png-5dda54f8857de831c3c23c420ee5c427.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Ground/dirt.png"
-dest_files=[ "res://.import/dirt.png-de0b45b173848514e0d66d4888a1ef40.stex" ]
+source_file="res://Sprites/Entities/Enemies/Monster_attack.png"
+dest_files=[ "res://.import/Monster_attack.png-5dda54f8857de831c3c23c420ee5c427.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

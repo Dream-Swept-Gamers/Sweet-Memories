@@ -83,8 +83,8 @@ func is_grounded():
 		return false
 
 func rand_move():
-	move_type = random.randi_range(0, 2)
-	move_time.start(random.randf_range(0.2, 1.8))
+	move_type = FreeAccessInfo.RN_Jesus(0, 0, 2) #random.randi_range(0, 2)
+	move_time.start(FreeAccessInfo.RN_Jesus(1, 0.2, 1.8))#random.randf_range(0.2, 1.8))
 	pass
 
 func _on_Timer_timeout():

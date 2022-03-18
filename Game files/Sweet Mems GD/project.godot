@@ -27,7 +27,6 @@ config/icon="res://icon.png"
 [autoload]
 
 FreeAccessInfo="*res://FreeAccessInfo.gd"
-DiscordScript="*res://discord_script.gd"
 
 [importer_defaults]
 

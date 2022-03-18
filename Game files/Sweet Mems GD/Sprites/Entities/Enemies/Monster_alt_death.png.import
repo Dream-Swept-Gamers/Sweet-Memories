@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/front.png-de1804061ee385273d2d53e2d3f43d7d.stex"
+path="res://.import/Monster_alt_death.png-3f81e3bb330fe8e6ca5c131cd33bd8fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Player/front.png"
-dest_files=[ "res://.import/front.png-de1804061ee385273d2d53e2d3f43d7d.stex" ]
+source_file="res://Sprites/Entities/Enemies/Monster_alt_death.png"
+dest_files=[ "res://.import/Monster_alt_death.png-3f81e3bb330fe8e6ca5c131cd33bd8fe.stex" ]
 
 [params]
 

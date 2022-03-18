@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Monster_death.png-0435c4adcb93fc514329b753650be8d6.stex"
+path="res://.import/right-walk.png-5c5a3757ec5ebfcb0f740e302c34f625.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Enemies/Monster_death.png"
-dest_files=[ "res://.import/Monster_death.png-0435c4adcb93fc514329b753650be8d6.stex" ]
+source_file="res://Sprites/Entities/Player/right-walk.png"
+dest_files=[ "res://.import/right-walk.png-5c5a3757ec5ebfcb0f740e302c34f625.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Monster_attack.png-35309cdd0b333be8fc86efba15dffcb6.stex"
+path="res://.import/Monster_walk.png-d9dde5f5ec69f20cc36c094601fff791.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Enemies/Monster_attack.png"
-dest_files=[ "res://.import/Monster_attack.png-35309cdd0b333be8fc86efba15dffcb6.stex" ]
+source_file="res://Sprites/Entities/Enemies/Monster_walk.png"
+dest_files=[ "res://.import/Monster_walk.png-d9dde5f5ec69f20cc36c094601fff791.stex" ]
 
 [params]
 

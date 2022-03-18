@@ -1,12 +1,13 @@
 [gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Objects/Enemies/Monster_attack.png" type="Texture" id=1]
-[ext_resource path="res://Objects/Enemies/Monster_alt_death.png" type="Texture" id=2]
-[ext_resource path="res://Objects/Enemies/Monster_walk.png" type="Texture" id=3]
-[ext_resource path="res://Objects/Enemies/Monster.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/Entities/Enemies/Monster_attack.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Entities/Enemies/Monster_alt_death.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Entities/Enemies/Monster_walk.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Entities/Monster.gd" type="Script" id=4]
 [ext_resource path="res://Objects/Dev/Areas/Hit Box.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Objects/Dev/Areas/Hurt Box.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Objects/Enemies/Monster_death.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Entities/Enemies/Monster_death.png" type="Texture" id=7]
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 16.0
