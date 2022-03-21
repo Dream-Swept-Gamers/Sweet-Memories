@@ -1,0 +1,308 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://addons/project_map/node_selected.stylebox" type="StyleBox" id=1]
+[ext_resource path="res://addons/project_map/node.stylebox" type="StyleBox" id=2]
+[ext_resource path="res://addons/project_map/pm_file_node.gd" type="Script" id=3]
+[ext_resource path="res://addons/project_map/pm_comment_node.gd" type="Script" id=4]
+[ext_resource path="res://addons/project_map/project_map.gd" type="Script" id=5]
+[ext_resource path="res://addons/project_map/pm_comment_node.tscn" type="PackedScene" id=6]
+[ext_resource path="res://addons/project_map/pm_file_node.tscn" type="PackedScene" id=7]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.2, 0.231373, 0.309804, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[node name="ProjectMap" type="GraphEdit"]
+visible = false
+margin_right = 1356.0
+margin_bottom = 659.0
+rect_min_size = Vector2( 500, 500 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/bg = SubResource( 1 )
+scroll_offset = Vector2( -706.714, -222.286 )
+snap_distance = 32
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="CommentNode" type="GraphNode" parent="." instance=ExtResource( 6 )]
+margin_left = 835.714
+margin_top = -20.7143
+margin_right = 905.714
+margin_bottom = 36.2857
+rect_min_size = Vector2( 35, 42 )
+mouse_filter = 1
+custom_styles/commentfocus = SubResource( 2 )
+custom_styles/comment = SubResource( 3 )
+offset = Vector2( 129, -243 )
+comment = true
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+comment_text = "Welcome to Project Map
+
+To start, drag files from the Godot filesystem into this screen to create file nodes. Click on the name to open it.
+
+Drag the icons to move the nodes.
+
+Click \"Add Group\" or \"Add Comment\" and click anywhere to add a group/comment node.
+
+What you are reading is a comment node. Use the bottom-right handle to resize it, it appears when hovering the comment.
+Click on the icon and press delete to delete it."
+comment_rect = Vector2( 35, 42 )
+
+[node name="FileNode" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 578.714
+margin_top = 222.286
+margin_right = 693.714
+margin_bottom = 284.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -128, 0 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Player/Player.tscn"
+icon_class = "KinematicBody2D"
+script_path = "res://Scripts/Entities/Player/Player.gd"
+script_name = "Player.gd"
+
+[node name="FileNode2" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 578.714
+margin_top = 446.286
+margin_right = 708.714
+margin_bottom = 508.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -128, 224 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Enemies/Monster.tscn"
+icon_class = "KinematicBody2D"
+script_path = "res://Scripts/Entities/Monster.gd"
+script_name = "Monster.gd"
+
+[node name="FileNode3" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 578.714
+margin_top = 510.286
+margin_right = 676.714
+margin_bottom = 542.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -128, 288 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Enemies/toxic gas/gas.tscn"
+icon_class = "Area2D"
+
+[node name="FileNode4" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 578.714
+margin_top = 286.286
+margin_right = 768.714
+margin_bottom = 348.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -128, 64 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Enemies/Friendly Mon/Friendly_Monster.tscn"
+icon_class = "KinematicBody2D"
+script_path = "res://Scripts/Entities/Monster.gd"
+script_name = "Monster.gd"
+
+[node name="FileNode5" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 354.714
+margin_top = 222.286
+margin_right = 492.714
+margin_bottom = 284.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -352, 0 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Dev/Level End.tscn"
+icon_class = "Node2D"
+script_path = "res://Scripts/Level Ass/Level End.gd"
+script_name = "Level End.gd"
+
+[node name="FileNode6" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 354.714
+margin_top = 286.286
+margin_right = 485.714
+margin_bottom = 348.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -352, 64 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Dev/Collectables/Cassette.tscn"
+icon_class = "Area2D"
+script_path = "res://Scripts/Level Ass/Cassette.gd"
+script_name = "Cassette.gd"
+
+[node name="FileNode8" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 1346.71
+margin_top = 254.286
+margin_right = 1467.71
+margin_bottom = 286.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( 640, 32 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Dev/Areas/Hit Box.tscn"
+icon_class = "Area2D"
+
+[node name="FileNode7" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 706.714
+margin_top = 446.286
+margin_right = 851.714
+margin_bottom = 478.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( 0, 224 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Dev/Areas/Enem_wall.tscn"
+icon_class = "StaticBody2D"
+
+[node name="FileNode9" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 1346.71
+margin_top = 286.286
+margin_right = 1478.71
+margin_bottom = 318.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( 640, 64 )
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Dev/Areas/Hurt Box.tscn"
+icon_class = "Area2D"
+
+[node name="FileNode10" type="GraphNode" parent="." instance=ExtResource( 7 )]
+margin_left = 226.714
+margin_top = 222.286
+margin_right = 338.714
+margin_bottom = 254.286
+mouse_filter = 1
+custom_constants/port_offset = 0
+custom_styles/frame = ExtResource( 2 )
+custom_styles/selectedframe = ExtResource( 1 )
+offset = Vector2( -480, 0 )
+selected = true
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+path = "res://Objects/Ground/Grass.tscn"
+icon_class = "TileMap"
+
+[connection signal="delete_nodes_request" from="." to="." method="_on_GraphEdit_delete_nodes_request"]

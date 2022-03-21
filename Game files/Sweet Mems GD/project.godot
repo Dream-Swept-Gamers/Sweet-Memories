@@ -8,11 +8,35 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "GraphNode",
+"class": "CommonNode",
+"language": "GDScript",
+"path": "res://addons/project_map/pm_common_node.gd"
+}, {
+"base": "Reference",
+"class": "Discord",
+"language": "GDScript",
+"path": "res://discord_sdk/discord.gd"
+} ]
+_global_script_class_icons={
+"CommonNode": "",
+"Discord": ""
+}
+
 [application]
 
 config/name="Sweet Memories"
 run/main_scene="res://Scenes/Title Test.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+FreeAccessInfo="*res://FreeAccessInfo.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/project_map/plugin.cfg" )
 
 [importer_defaults]
 
