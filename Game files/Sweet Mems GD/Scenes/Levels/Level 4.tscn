@@ -9,6 +9,7 @@
 [ext_resource path="res://Objects/Dev/Areas/Enem_wall.tscn" type="PackedScene" id=7]
 
 
+
 [sub_resource type="SegmentShape2D" id=1]
 a = Vector2( 0, -64 )
 b = Vector2( 0, 47 )

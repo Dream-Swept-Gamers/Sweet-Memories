@@ -9,6 +9,7 @@
 [ext_resource path="res://Objects/Enemies/Monster.tscn" type="PackedScene" id=7]
 
 
+
 [sub_resource type="RectangleShape2D" id=1]
 
 [node name="Node2D" type="Node2D"]

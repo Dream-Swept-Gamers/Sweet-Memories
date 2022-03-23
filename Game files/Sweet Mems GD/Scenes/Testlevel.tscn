@@ -10,6 +10,7 @@
 [ext_resource path="res://Objects/Player/GUI.tscn" type="PackedScene" id=8]
 
 
+
 [sub_resource type="Environment" id=2]
 background_mode = 1
 background_color = Color( 0.666667, 0.976471, 1, 1 )
