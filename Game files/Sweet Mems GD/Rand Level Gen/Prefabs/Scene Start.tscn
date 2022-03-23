@@ -14,7 +14,6 @@ position = Vector2( 164, 3 )
 
 [node name="jig_saw_new" parent="Grass2" instance=ExtResource( 3 )]
 position = Vector2( 745, 549 )
-auto = true
 
 [node name="Area2D" parent="Grass2/jig_saw_new" index="0"]
 position = Vector2( -41, -44 )
@@ -25,3 +24,4 @@ monitorable = false
 position = Vector2( -582, -516 )
 
 [editable path="Grass2/jig_saw_new"]
+[editable path="Grass2/jig_saw_new/Cassette"]

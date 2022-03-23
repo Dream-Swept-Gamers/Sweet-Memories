@@ -5,7 +5,7 @@
 [ext_resource path="res://Objects/Enemies/Monster.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Objects/Ground/Grass.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Objects/Dev/Areas/Enem_wall.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Rand Level Gen/Jigsaw_new.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Rand Level Gen/jig.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 10, 65 )
@@ -78,17 +78,10 @@ position = Vector2( 331, 126 )
 scale = Vector2( 30, 2 )
 z_index = -1
 
-[node name="jig_saw_new" parent="." instance=ExtResource( 6 )]
-position = Vector2( 840, -42 )
-
-[node name="Area2D" parent="jig_saw_new" index="0"]
-position = Vector2( -41, -30 )
-
-[node name="Cassette" parent="jig_saw_new" index="1"]
-position = Vector2( -46, -28 )
+[node name="Jig" parent="." instance=ExtResource( 6 )]
+position = Vector2( 843, -30 )
 
 [editable path="Grass2/Area2D"]
 [editable path="Grass2/Area2D2"]
 [editable path="Grass2/Area2D3"]
 [editable path="Grass2/Area2D4"]
-[editable path="jig_saw_new"]
