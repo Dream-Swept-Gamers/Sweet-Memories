@@ -5,10 +5,8 @@
 [ext_resource path="res://Scripts/Entities/Player/Player.gd" type="Script" id=3]
 [ext_resource path="res://Objects/Dev/Areas/Hit Box.tscn" type="PackedScene" id=4]
 
-
-[sub_resource type="CapsuleShape2D" id=6]
-radius = 6.0
-height = 12.0
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 7, 10.5 )
 
 [sub_resource type="Animation" id=1]
 resource_name = "Idle"
@@ -230,7 +228,8 @@ collision_layer = 0
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 6 )
+position = Vector2( 0, 0.5 )
+shape = SubResource( 9 )
 
 [node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D"]
 position = Vector2( -4, 8 )

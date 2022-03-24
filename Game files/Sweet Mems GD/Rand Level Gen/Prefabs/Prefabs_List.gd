@@ -2,7 +2,7 @@ extends Node
 var pref = 0
 var pref2 : String
 
-var prefabs : Array = ["res://Rand Level Gen/Prefabs/Gas Challenge.tscn", "res://Rand Level Gen/Prefabs/Brandin.tscn"]
+var prefabs : Array = ["res://Rand Level Gen/Prefabs/Gas Challenge.tscn", "res://Rand Level Gen/Prefabs/Brandin.tscn", "res://Rand Level Gen/Prefabs/Jumping.tscn", "res://Rand Level Gen/Prefabs/Spikey.tscn", "res://Rand Level Gen/Prefabs/Fall.tscn", "res://Rand Level Gen/Prefabs/maze.tscn"]
 
 var jigsaw_loc = Vector2.ZERO
 

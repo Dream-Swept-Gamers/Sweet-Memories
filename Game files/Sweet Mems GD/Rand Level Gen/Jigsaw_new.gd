@@ -22,8 +22,8 @@ func _on_Area2D_area_entered(area):
 func create_prefab():
 	var pref = PrefabsList.rand_prefab()
 	var prefab = load(pref).instance()
-	self.get_parent().add_child(prefab)
-	prefab.global_position = global_position
+	add_child(prefab)
+	#prefab.global_position = global_position
 	
 func move():
 	global_position = PrefabsList.jigsaw_loc
