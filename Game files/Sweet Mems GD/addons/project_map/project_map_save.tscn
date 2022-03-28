@@ -17,8 +17,8 @@ bg_color = Color( 0.2, 0.231373, 0.309804, 1 )
 
 [node name="ProjectMap" type="GraphEdit"]
 visible = false
-margin_right = 1356.0
-margin_bottom = 659.0
+margin_right = 1996.0
+margin_bottom = 881.0
 rect_min_size = Vector2( 500, 500 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -33,9 +33,9 @@ __meta__ = {
 
 [node name="CommentNode" type="GraphNode" parent="." instance=ExtResource( 6 )]
 margin_left = 835.714
-margin_top = -20.7143
+margin_top = -20.714
 margin_right = 905.714
-margin_bottom = 36.2857
+margin_bottom = 36.286
 rect_min_size = Vector2( 35, 42 )
 mouse_filter = 1
 custom_styles/commentfocus = SubResource( 2 )

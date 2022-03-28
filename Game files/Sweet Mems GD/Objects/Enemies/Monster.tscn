@@ -8,7 +8,6 @@
 [ext_resource path="res://Objects/Dev/Areas/Hurt Box.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Sprites/Entities/Enemies/Monster_death.png" type="Texture" id=7]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 16.0
 height = 0.0
@@ -1069,7 +1068,7 @@ tracks/17/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ true ]
+"values": [ false ]
 }
 tracks/18/type = "value"
 tracks/18/path = NodePath("CollisionShape2D/Attack_HurtBox:monitorable")
@@ -1094,7 +1093,6 @@ jump_impulse = 200
 position = Vector2( -8, 0 )
 scale = Vector2( 1, 0.98 )
 shape = SubResource( 1 )
-disabled = true
 
 [node name="PlayerDetect" type="RayCast2D" parent="CollisionShape2D"]
 position = Vector2( 15, 0 )
