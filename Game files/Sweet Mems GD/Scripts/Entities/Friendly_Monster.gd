@@ -6,12 +6,15 @@ export var friction = 5
 export var jump_impulse = 150
 export var max_health = 10
 
+export var boing = false
+var bouncing = false
+
 enum {
-	MOVE,
-	ATTACK,
+	IDLE,
+	BOUNCE,
 }
 
-var state = MOVE
+var state = IDLE
 var cur_velocity = Vector2.ZERO
 var cur_health = max_health
 var can_jump = true
@@ -19,16 +22,15 @@ var can_jump = true
 var move_type = 0
 var random = RandomNumberGenerator.new()
 
-onready var wall_ray = get_node("CollisionShape2D/RayCast2D")
-onready var ground_ray = get_node("CollisionShape2D/RayCast2D2")
-onready var player_detect = get_node("CollisionShape2D/PlayerDetect")
+onready var ground_ray0 = get_node("R_Jump_cast")
+onready var ground_ray = get_node("L_Jump_cast")
+onready var ground_ray2 = get_node("M_Jump_cast")
 onready var animator = get_node("AnimationPlayer")
-onready var move_time = get_node("Timer")
 
 
 
 func _ready():
-	rand_move()
+	animator.play("Idle")
 	pass
 
 func _physics_process(delta):
@@ -36,45 +38,45 @@ func _physics_process(delta):
 	cur_velocity.y = cur_velocity.y + gravity * delta
 	
 	match state:
-		MOVE: move()
+		IDLE: pass
 		
-		ATTACK: attack()
+		BOUNCE: bounce()
 		
 	
 	cur_velocity = move_and_slide(cur_velocity)
 
-func move():
-	
-	if move_type == 1:
-		cur_velocity.x -= speed
-		animator.play("Move_Left")
-	else: if move_type == 2:
-		cur_velocity.x += speed
-		animator.play("Move_Right")
-	
-	if wall_ray.is_colliding() and can_jump and move_type != 3:
-		cur_velocity.y -= jump_impulse
-		can_jump = false
-	
-	if is_grounded() == true:
-		can_jump = true
-	else: can_jump = false
-	
-
-func attack():
-	pass
-
 func is_grounded():
-	if ground_ray.is_colliding():
+	if ground_ray.is_colliding() or ground_ray0.is_colliding() or ground_ray2.is_colliding():
 		return true
 	else:
 		return false
 
-func rand_move():
-	move_type = random.randi_range(0, 2)
-	move_time.start(random.randf_range(0.2, 1.8))
+func bounce():
+	if not bouncing:
+		bouncing = true
+		animator.play("Bounce")
+	if bouncing and boing and is_grounded():
+		cur_velocity.y -= jump_impulse
+	#elif bouncing and boing and not is_grounded():
+	#	bouncing = false
+	#	pass
+	
 	pass
 
-func _on_Timer_timeout():
-	rand_move()
-	pass # Replace with function body.
+
+func _on_Area2D_area_entered(area):
+	state = BOUNCE
+	var A2D = get_node("Area2D")
+	A2D.monitoring = false
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == "Bounce":
+		bouncing = false
+		state = IDLE
+		boing = false
+		animator.play("Idle")
+
+func boing_true():
+	if is_grounded() or true == true:
+		cur_velocity.y -= jump_impulse

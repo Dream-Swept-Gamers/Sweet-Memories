@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/Scenes/Level_Sel.gd" type="Script" id=1]
 [ext_resource path="res://Objects/Ground/Grass.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Objects/Dev/Areas/Enem_wall.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Objects/Dev/Collectables/Cassette.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Objects/Dev/InterminableStart.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Objects/Enemies/Friendly Mon/Friendly_Monster.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 70 )
@@ -113,6 +114,9 @@ position = Vector2( 509, 625 )
 
 [node name="CollisionShape2D" parent="AspectRatioContainer/Grass2/Interminable/Area2D" index="0"]
 position = Vector2( -5.5, 0 )
+
+[node name="Memory_Mon" parent="AspectRatioContainer/Grass2" instance=ExtResource( 9 )]
+position = Vector2( -196, 245 )
 
 [node name="Monster" parent="AspectRatioContainer" instance=ExtResource( 3 )]
 position = Vector2( 228, 244 )
