@@ -52,6 +52,7 @@ config/icon="res://icon.png"
 
 FreeAccessInfo="*res://FreeAccessInfo.gd"
 PrefabsList="*res://Rand Level Gen/Prefabs/Prefabs_List.gd"
+PlayerSaveFile="*res://Player_SaveFile.gd"
 
 [editor_plugins]
 

@@ -40,12 +40,15 @@ lifetime = 2.0
 
 [node name="Cassette2" parent="." instance=ExtResource( 5 )]
 position = Vector2( -300, -506 )
+ID = "Lvl1_02"
 
 [node name="Cassette" parent="." instance=ExtResource( 5 )]
 position = Vector2( -792, -513 )
+ID = "Lvl1_01"
 
 [node name="Cassette3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 533, -342 )
+ID = "Lvl1_03"
 
 [node name="GUI" parent="." instance=ExtResource( 6 )]
 
