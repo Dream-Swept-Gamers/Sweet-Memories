@@ -85,15 +85,14 @@ margin_bottom = 14.0
 text = "Level 5"
 
 [node name="Level 6" type="Button" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -47.0
-margin_top = 241.0
-margin_right = 47.0
-margin_bottom = 261.0
+margin_left = -55.0
+margin_top = 240.0
+margin_right = 39.0
+margin_bottom = 260.0
 text = "interminable"
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
