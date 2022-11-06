@@ -1,8 +1,3 @@
-# Sweet Memories: Ensuenos
-## About
-### Skills USA
-Originally created for Skills USA: Maine 2022
-It won Third Place (Bronze)
-
-It is now being developed as a hobby project
+#This is the Godot 4 Branch of:
+##Sweet Memories: Dreams into Nightmares
 
