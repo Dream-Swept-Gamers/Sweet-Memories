@@ -1,12 +1,12 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-export var gravity = 1700
-export var speed = 200
-export var friction = 5
-export var jump_impulse = 150# * 2
-export var max_health = 10
+@export var gravity = 1700
+@export var speed = 200
+@export var friction = 5
+@export var jump_impulse = 150# * 2
+@export var max_health = 10
 
-export var boing = false
+@export var boing = false
 var bouncing = false
 
 enum {
@@ -21,13 +21,13 @@ var can_jump = true
 
 var move_type = 0
 var random = RandomNumberGenerator.new()
-var Player_char = Reference
-var the_area = Reference
+var Player_char = RefCounted
+var the_area = RefCounted
 
-onready var ground_ray0 = get_node("R_Jump_cast")
-onready var ground_ray = get_node("L_Jump_cast")
-onready var ground_ray2 = get_node("M_Jump_cast")
-onready var animator = get_node("AnimationPlayer")
+@onready var ground_ray0 = get_node("R_Jump_cast")
+@onready var ground_ray = get_node("L_Jump_cast")
+@onready var ground_ray2 = get_node("M_Jump_cast")
+@onready var animator = get_node("AnimationPlayer")
 
 
 
@@ -45,7 +45,9 @@ func _physics_process(delta):
 		BOUNCE: bounce()
 		
 	
-	cur_velocity = move_and_slide(cur_velocity)
+	set_velocity(cur_velocity)
+	move_and_slide()
+	cur_velocity = velocity
 
 func is_grounded():
 	if ground_ray.is_colliding() or ground_ray0.is_colliding() or ground_ray2.is_colliding():

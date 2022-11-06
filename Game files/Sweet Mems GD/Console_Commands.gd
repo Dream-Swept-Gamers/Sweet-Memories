@@ -1,26 +1,26 @@
 extends Node
 
 func _ready():
-	Console.add_command('enable_cheating', self, 'enable_cheats')\
-		.set_description('Enables cheating for this session, also disables achievements')\
-		.register()
-	Console.add_command('modify_player_all', self, 'modify_player_all')\
-		.set_description("Modifies all the players stats in one command")\
-		.register()
-	Console.add_command("modify_player_grav", self, "modify_player_grav")\
-		.set_description("Modifies the players gravity")\
-		.register()
-	Console.add_command("modify_player_fric", self, "modify_player_fric")\
-		.set_description("Modifies the players friction")\
-		.register()
-	Console.add_command("modify_player_jump", self, "modify_player_jump")\
-		.set_description("Modifies the players jump height")\
-		.register()
+#	Console.add_command('enable_cheating', self, 'enable_cheats')\
+#		super.set_description('Enables cheating for this session, also disables achievements')\
+#		super.register()
+#	Console.add_command('modify_player_all', self, 'modify_player_all')\
+#		super.set_description("Modifies all the players stats in one command")\
+#		super.register()
+#	Console.add_command("modify_player_grav", self, "modify_player_grav")\
+#		super.set_description("Modifies the players gravity")\
+#		super.register()
+#	Console.add_command("modify_player_fric", self, "modify_player_fric")\
+#		super.set_description("Modifies the players friction")\
+#		super.register()
+#	Console.add_command("modify_player_jump", self, "modify_player_jump")\
+#		super.set_description("Modifies the players jump height")\
+#		super.register()
 	pass
 
-func enable_cheats():
-	FreeAccessInfo.cheating = true
-	Console.write_line("Cheats have been enabled for this session. To disable them, restart the game")
+#func enable_cheats():
+#	FreeAccessInfo.cheating = true
+#	Console.write_line("Cheats have been enabled for this session. To disable them, restart the game")
 
 func modify_player_all(grav, speed, friction, jump, m_health):
 	var player_ref = FreeAccessInfo.cur_player_instance
@@ -32,7 +32,7 @@ func modify_player_all(grav, speed, friction, jump, m_health):
 	Console.write_line("All player stats modified")
 
 func modify_player_grav(grav):
-	var player_ref : Reference = FreeAccessInfo.cur_player_instance
+	var player_ref : RefCounted = FreeAccessInfo.cur_player_instance
 	player_ref.gravity = grav
 	Console.write_line("Player gravity modified")
 

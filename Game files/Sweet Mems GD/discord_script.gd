@@ -19,7 +19,7 @@ func _ready() -> void:
 	if result != Discord.Result.OK:
 		core = null
 	var activity: = Discord.Activity.new()
-	activity.timestamps.start = OS.get_unix_time()
+	activity.timestamps.start = Time.get_unix_time_from_system()
 	activity.state = "Testing Sweet Memories"
 	activity.details = "Implimenting Discord Rich Presence"
 	activity.assets.large_image = "Monster"

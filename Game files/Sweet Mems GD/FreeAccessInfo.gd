@@ -1,7 +1,7 @@
 extends Node
 var cheating = false
 
-var cur_player_instance = Reference
+var cur_player_instance = RefCounted
 
 signal casset_change
 
@@ -44,8 +44,8 @@ func shrodingers_cassette(id):
 	else:
 		return false
 
-func change_scene(scene):
-	get_tree().change_scene(scene)
+func change_scene_to_file(scene):
+	get_tree().change_scene_to_file(scene)
 	cassets = 0
 
 

@@ -1,10 +1,10 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-export var gravity = 1700
-export var speed = 200
-export var friction = 5
-export var jump_impulse = 500
-export var max_health = 10
+@export var gravity = 1700
+@export var speed = 200
+@export var friction = 5
+@export var jump_impulse = 500
+@export var max_health = 10
 
 enum {
 	MOVE,
@@ -16,9 +16,9 @@ var cur_velocity = Vector2.ZERO
 var cur_health = max_health
 var can_jump = true
 
-onready var ray_1 = get_node("CollisionShape2D/RayCast2D")
-onready var ray_2 = get_node("CollisionShape2D/RayCast2D2")
-onready var animator = get_node("AnimationPlayer")
+@onready var ray_1 = get_node("CollisionShape2D/RayCast2D")
+@onready var ray_2 = get_node("CollisionShape2D/RayCast2D2")
+@onready var animator = get_node("AnimationPlayer")
 
 
 
@@ -36,7 +36,9 @@ func _physics_process(delta):
 		ATTACK: attack()
 		
 	
-	cur_velocity = move_and_slide(cur_velocity)
+	set_velocity(cur_velocity)
+	move_and_slide()
+	cur_velocity = velocity
 
 func move():
 	
@@ -68,4 +70,4 @@ func is_grounded():
 
 
 func _on_KillBox_area_entered(area):
-	get_tree().change_scene("res://Scenes/Death.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Death.tscn")

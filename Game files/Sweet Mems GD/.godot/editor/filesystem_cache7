@@ -1,0 +1,325 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1667770515
+Background.tscn::PackedScene::-1::1667758380::0::1::::<><>::res://Sprites/Misc/Sky_L1.png<>res://Sprites/Misc/Sky_L2.png<>res://Sprites/Misc/Sky_L3.png<>res://Sprites/Misc/Sky_L4.png
+Console_Commands.gd::GDScript::-1::1667762794::0::1::::<>Node<>::
+default_env.tres::Environment::-1::1667758380::0::1::::<><>::
+discord_script.gd::GDScript::-1::1667758380::0::1::::<>Node<>::
+export_presets.cfg::TextFile::-1::1665887575::0::1::::<><>::
+FreeAccessInfo.gd::GDScript::-1::1667758380::0::1::::<>Node<>::
+icon.png::CompressedTexture2D::242375430942057474::1665883199::1667761517::1::::<><>::
+Player_SaveFile.gd::GDScript::-1::1667758380::0::1::::<>Node<>::
+::res://addons/::1667770515
+::res://addons/InstanceDock/::1667770515
+InstanceDock.gd::GDScript::-1::1667770515::0::1::::<>PanelContainer<>::
+InstanceDock.tscn::PackedScene::268425406949137734::1667770515::0::1::::<><>::res://addons/InstanceDock/InstanceDock.gd
+InstanceDockPlugin.gd::GDScript::-1::1667770515::0::1::::<>EditorPlugin<>::
+InstanceSlot.gd::GDScript::-1::1667770515::0::1::::<>PanelContainer<>::
+InstanceSlot.tscn::PackedScene::2450137582927815931::1667770515::0::1::::<><>::res://addons/InstanceDock/InstanceSlot.gd<>uid://dlxgnaypnodk
+Loading.png::CompressedTexture2D::957295058629283235::1667770515::1667770516::1::::<><>::
+Missing.png::CompressedTexture2D::636482698438118094::1667770515::1667770516::1::::<><>::
+plugin.cfg::TextFile::-1::1667770515::0::1::::<><>::
+::res://addons_old/::1663520700
+::res://addons_old/InstanceDock/::1667762684
+InstanceDock.gd::GDScript::-1::1667758382::0::1::::<>PanelContainer<>::
+InstanceDock.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/InstanceDock/InstanceDock.gd
+InstanceDockPlugin.gd::GDScript::-1::1667758382::0::1::::<>EditorPlugin<>::
+InstanceSlot.gd::GDScript::-1::1667758382::0::1::::<>PanelContainer<>::
+InstanceSlot.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/InstanceDock/InstanceSlot.gd<>res://addons/InstanceDock/Loading.png
+Loading.png::CompressedTexture2D::3660749749750205196::1648149212::1667762684::1::::<><>::
+Missing.png::CompressedTexture2D::2907119512332604920::1648149212::1667762684::1::::<><>::
+plugin.cfg::TextFile::-1::1648149212::0::1::::<><>::
+::res://addons_old/project_map/::1667762684
+comment_focus.stylebox::StyleBoxFlat::-1::1647888656::0::1::::<><>::
+group.stylebox::StyleBoxFlat::-1::1647888656::0::1::::<><>::
+group_selected.stylebox::StyleBoxFlat::-1::1647888656::0::1::::<><>::
+icon.png::CompressedTexture2D::804917436430756094::1647888656::1667762684::1::::<><>::
+node.stylebox::StyleBoxFlat::-1::1647888656::0::1::::<><>::
+node_selected.stylebox::StyleBoxFlat::-1::1647888656::0::1::::<><>::
+plugin.cfg::TextFile::-1::1647888656::0::1::::<><>::
+plugin.gd::GDScript::-1::1667758382::0::1::::<>EditorPlugin<>::
+pm_comment_node.gd::GDScript::-1::1667758382::0::1::::<><>::
+pm_comment_node.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/project_map/pm_comment_node.gd<>res://addons/project_map/comment_focus.stylebox
+pm_common_node.gd::GDScript::-1::1667758382::0::1::::CommonNode<>GraphNode<>::
+pm_file_node.gd::GDScript::-1::1667758382::0::1::::<>GraphNode<>::
+pm_file_node.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/project_map/pm_file_node.gd<>res://addons/project_map/pm_resource.tscn<>res://addons/project_map/node_selected.stylebox<>res://addons/project_map/node.stylebox
+pm_group_node.gd::GDScript::-1::1667758382::0::1::::<><>::
+pm_group_node.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/project_map/pm_group_node.gd<>res://addons/project_map/group.stylebox<>res://addons/project_map/group_selected.stylebox
+pm_resource.gd::GDScript::-1::1667758382::0::1::::<>HBoxContainer<>::
+pm_resource.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/project_map/pm_resource.gd
+project_map.gd::GDScript::-1::1667758382::0::1::::<>GraphEdit<>::
+project_map.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/project_map/pm_comment_node.tscn<>res://addons/project_map/project_map.gd
+project_map_save.tscn::PackedScene::-1::1667758382::0::1::::<><>::res://addons/project_map/node_selected.stylebox<>res://addons/project_map/node.stylebox<>res://addons/project_map/pm_file_node.gd<>res://addons/project_map/pm_comment_node.gd<>res://addons/project_map/project_map.gd<>res://addons/project_map/pm_comment_node.tscn<>res://addons/project_map/pm_file_node.tscn
+::res://addons_old/quentincaffeino/::1663520702
+::res://addons_old/quentincaffeino/array-utils/::1663520700
+LICENSE.md::TextFile::-1::1663520700::0::1::::<><>::
+README.md::TextFile::-1::1663520700::0::1::::<><>::
+::res://addons_old/quentincaffeino/array-utils/src/::1663520700
+Collection.gd::GDScript::-1::1667758382::0::1::::<><>::
+QueueCollection.gd::GDScript::-1::1667758382::0::1::::<><>::
+Utils.gd::GDScript::-1::1667758382::0::1::::<>RefCounted<>::
+::res://addons_old/quentincaffeino/callback/::1663520700
+LICENSE.md::TextFile::-1::1663520700::0::1::::<><>::
+README.md::TextFile::-1::1663520700::0::1::::<><>::
+::res://addons_old/quentincaffeino/callback/assets/::1663520700
+::res://addons_old/quentincaffeino/callback/assets/translations/::1663520700
+errors.en.gd::GDScript::-1::1667758382::0::1::::<>RefCounted<>::
+::res://addons_old/quentincaffeino/callback/src/::1663520700
+AbstractCallback.gd::GDScript::-1::1667758382::0::1::::<>RefCounted<>::
+Callback.gd::GDScript::-1::1667758382::0::1::::<><>::
+CallbackBuilder.gd::GDScript::-1::1667758382::0::1::::<>RefCounted<>::
+FuncRefCallback.gd::GDScript::-1::1667758382::0::1::::<><>::
+Utils.gd::GDScript::-1::1667758382::0::1::::<>RefCounted<>::
+::res://addons_old/quentincaffeino/console/::1663520702
+.gutconfig.json::JSON::-1::1663520700::0::1::::<><>::
+DefaultActions.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+plugin.cfg::TextFile::-1::1663520701::0::1::::<><>::
+plugin.gd::GDScript::-1::1667758381::0::1::::<>EditorPlugin<>::
+::res://addons_old/quentincaffeino/console/assets/::1663520701
+::res://addons_old/quentincaffeino/console/assets/fonts/::1663520700
+::res://addons_old/quentincaffeino/console/assets/fonts/source-code-pro/::1663520701
+LICENSE.md::TextFile::-1::1663520700::0::1::::<><>::
+README.md::TextFile::-1::1663520701::0::1::::<><>::
+::res://addons_old/quentincaffeino/console/assets/fonts/source-code-pro/OTF/::1667762684
+SourceCodePro-Black.otf::FontFile::9165752733174635250::1663520700::1667762684::1::::<><>::
+SourceCodePro-BlackIt.otf::FontFile::6840564251424347426::1663520700::1667762684::1::::<><>::
+SourceCodePro-Bold.otf::FontFile::1256509377070339802::1663520701::1667762684::1::::<><>::
+SourceCodePro-BoldIt.otf::FontFile::998551348472877475::1663520701::1667762684::1::::<><>::
+SourceCodePro-ExtraLight.otf::FontFile::5377658666160584845::1663520701::1667762684::1::::<><>::
+SourceCodePro-ExtraLightIt.otf::FontFile::3365118184455061902::1663520701::1667762684::1::::<><>::
+SourceCodePro-It.otf::FontFile::1045706738556920953::1663520701::1667762684::1::::<><>::
+SourceCodePro-Light.otf::FontFile::6915233601139674367::1663520701::1667762684::1::::<><>::
+SourceCodePro-LightIt.otf::FontFile::7662411802281756176::1663520701::1667762684::1::::<><>::
+SourceCodePro-Medium.otf::FontFile::2965654628323346974::1663520701::1667762684::1::::<><>::
+SourceCodePro-MediumIt.otf::FontFile::8891360223525238705::1663520701::1667762684::1::::<><>::
+SourceCodePro-Regular.otf::FontFile::5651299207498915540::1663520701::1667762684::1::::<><>::
+SourceCodePro-Semibold.otf::FontFile::6565960345180274191::1663520701::1667762684::1::::<><>::
+SourceCodePro-SemiboldIt.otf::FontFile::5927684709574135730::1663520701::1667762684::1::::<><>::
+::res://addons_old/quentincaffeino/console/assets/themes/::1665962054
+Console.tres::Theme::-1::1665962054::0::1::::<><>::res://addons/quentincaffeino/console/assets/fonts/source-code-pro/OTF/SourceCodePro-Regular.otf
+::res://addons_old/quentincaffeino/console/docs/::1663520701
+Type.md::TextFile::-1::1663520701::0::1::::<><>::
+::res://addons_old/quentincaffeino/console/docs/generated/::1663520701
+AbstractCallback.md::TextFile::-1::1663520701::0::1::::<><>::
+ActionService.md::TextFile::-1::1663520701::0::1::::<><>::
+AnyType.md::TextFile::-1::1663520701::0::1::::<><>::
+Argument.md::TextFile::-1::1663520701::0::1::::<><>::
+ArgumentFactory.md::TextFile::-1::1663520701::0::1::::<><>::
+BaseCommands.md::TextFile::-1::1663520701::0::1::::<><>::
+BaseRangeType.md::TextFile::-1::1663520701::0::1::::<><>::
+BaseRegexCheckedType.md::TextFile::-1::1663520701::0::1::::<><>::
+BaseType.md::TextFile::-1::1663520701::0::1::::<><>::
+BoolType.md::TextFile::-1::1663520701::0::1::::<><>::
+Callback.md::TextFile::-1::1663520701::0::1::::<><>::
+CallbackBuilder.md::TextFile::-1::1663520701::0::1::::<><>::
+Collection.md::TextFile::-1::1663520701::0::1::::<><>::
+Command.md::TextFile::-1::1663520701::0::1::::<><>::
+CommandAutocomplete.md::TextFile::-1::1663520701::0::1::::<><>::
+CommandBuilder.md::TextFile::-1::1663520701::0::1::::<><>::
+CommandCollection.md::TextFile::-1::1663520701::0::1::::<><>::
+CommandGroup.md::TextFile::-1::1663520701::0::1::::<><>::
+CommandService.md::TextFile::-1::1663520701::0::1::::<><>::
+Console.md::TextFile::-1::1663520701::0::1::::<><>::
+ConsoleLine.md::TextFile::-1::1663520701::0::1::::<><>::
+DefaultActions.md::TextFile::-1::1663520701::0::1::::<><>::
+DefaultActionServiceFactory.md::TextFile::-1::1663520701::0::1::::<><>::
+Error.md::TextFile::-1::1663520701::0::1::::<><>::
+errors.en.md::TextFile::-1::1663520701::0::1::::<><>::
+FilterType.md::TextFile::-1::1663520701::0::1::::<><>::
+FloatRangeType.md::TextFile::-1::1663520701::0::1::::<><>::
+FloatType.md::TextFile::-1::1663520701::0::1::::<><>::
+FuncRefCallback.md::TextFile::-1::1663520701::0::1::::<><>::
+History.md::TextFile::-1::1663520701::0::1::::<><>::
+IntRangeType.md::TextFile::-1::1663520701::0::1::::<><>::
+IntType.md::TextFile::-1::1663520701::0::1::::<><>::
+Iterator.md::TextFile::-1::1663520701::0::1::::<><>::
+Logger.md::TextFile::-1::1663520701::0::1::::<><>::
+QueueCollection.md::TextFile::-1::1663520701::0::1::::<><>::
+RegExLib.md::TextFile::-1::1663520701::0::1::::<><>::
+Result.md::TextFile::-1::1663520701::0::1::::<><>::
+SnapshotCollection.md::TextFile::-1::1663520701::0::1::::<><>::
+StringType.md::TextFile::-1::1663520701::0::1::::<><>::
+Trie.md::TextFile::-1::1663520701::0::1::::<><>::
+TypeFactory.md::TextFile::-1::1663520701::0::1::::<><>::
+Utils.md::TextFile::-1::1663520701::0::1::::<><>::
+Vector2Type.md::TextFile::-1::1663520701::0::1::::<><>::
+Vector3Type.md::TextFile::-1::1663520701::0::1::::<><>::
+::res://addons_old/quentincaffeino/console/src/::1663522588
+Console.gd::GDScript::-1::1667758381::0::1::::<>CanvasLayer<>::
+Console.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://addons/quentincaffeino/console/src/Console.gd<>res://addons/quentincaffeino/console/src/ConsoleLine.gd<>res://addons/quentincaffeino/console/assets/themes/Console.tres
+ConsoleLine.gd::GDScript::-1::1667758381::0::1::::<>LineEdit<>::
+::res://addons_old/quentincaffeino/console/src/Argument/::1663520702
+Argument.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+ArgumentFactory.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+::res://addons_old/quentincaffeino/console/src/Command/::1663520702
+Command.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+CommandBuilder.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+CommandCollection.gd::GDScript::-1::1667758381::0::1::::<><>::
+CommandService.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+::res://addons_old/quentincaffeino/console/src/Misc/::1663520702
+BaseCommands.gd::GDScript::-1::1667758381::0::1::::<><>::
+Error.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+History.gd::GDScript::-1::1667758381::0::1::::<><>::
+Logger.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+Result.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+Trie.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+::res://addons_old/quentincaffeino/console/src/Type/::1663520702
+AnyType.gd::GDScript::-1::1667758381::0::1::::<><>::
+BaseRangeType.gd::GDScript::-1::1667758381::0::1::::<><>::
+BaseRegexCheckedType.gd::GDScript::-1::1667758381::0::1::::<><>::
+BaseType.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+BoolType.gd::GDScript::-1::1667758381::0::1::::<><>::
+FilterType.gd::GDScript::-1::1667758381::0::1::::<><>::
+FloatRangeType.gd::GDScript::-1::1667758381::0::1::::<><>::
+FloatType.gd::GDScript::-1::1667758381::0::1::::<><>::
+IntRangeType.gd::GDScript::-1::1667758381::0::1::::<><>::
+IntType.gd::GDScript::-1::1667758381::0::1::::<><>::
+StringType.gd::GDScript::-1::1667758381::0::1::::<><>::
+TypeFactory.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+Vector2Type.gd::GDScript::-1::1667758381::0::1::::<><>::
+Vector3Type.gd::GDScript::-1::1667758381::0::1::::<><>::
+::res://addons_old/quentincaffeino/console/tests/::1663520702
+tests.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://addons/gut/plugin_control.gd
+::res://addons_old/quentincaffeino/console/tests/unit/::1663520702
+test_console_line.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_trie.gd::GDScript::-1::1667758381::0::1::::<><>::
+::res://addons_old/quentincaffeino/console/tests/unit/Argument/::1663520702
+test_argument.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_argument_factory.gd::GDScript::-1::1667758381::0::1::::<><>::
+::res://addons_old/quentincaffeino/console/tests/unit/Type/::1663520702
+test_base_regex_cheched_type.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_bool_type.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_float_type.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_int_type.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_string_type.gd::GDScript::-1::1667758381::0::1::::<><>::
+test_type_factory.gd::GDScript::-1::1667758381::0::1::::<><>::
+::res://addons_old/quentincaffeino/console-csharp/::1663520700
+plugin.cfg::TextFile::-1::1663520700::0::1::::<><>::
+plugin.gd::GDScript::-1::1667758381::0::1::::<>EditorPlugin<>::
+::res://addons_old/quentincaffeino/console-csharp/src/::1663520700
+::res://addons_old/quentincaffeino/console-csharp/src/Command/::1663520700
+::res://addons_old/quentincaffeino/iterator/::1663520702
+LICENSE.md::TextFile::-1::1663520702::0::1::::<><>::
+README.md::TextFile::-1::1663520702::0::1::::<><>::
+::res://addons_old/quentincaffeino/iterator/src/::1663520702
+Iterator.gd::GDScript::-1::1667758381::0::1::::<><>::
+::res://addons_old/quentincaffeino/regexlib/::1663520702
+LICENSE.md::TextFile::-1::1663520702::0::1::::<><>::
+README.md::TextFile::-1::1663520702::0::1::::<><>::
+::res://addons_old/quentincaffeino/regexlib/src/::1663520702
+RegExLib.gd::GDScript::-1::1667758381::0::1::::<>RefCounted<>::
+::res://Assets/::1646699766
+::res://bin/::1647888656
+::res://bin/windows-32/::1647888656
+::res://bin/windows-64/::1647888656
+::res://discord_sdk/::1647888656
+discord.gd::GDScript::-1::1667758381::0::1::::Discord<>RefCounted<>::
+::res://Objects/::1667761517
+Background.png::CompressedTexture2D::6977105579221052419::1648149212::1667761517::1::::<><>::
+::res://Objects/Dev/::1648149212
+InterminableStart.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Sprites/Misc/Skull.png<>res://Scripts/Scenes/InterminableStart.gd
+Level End.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Sprites/Misc/star.png<>res://Scripts/Level Ass/Level End.gd
+::res://Objects/Dev/Areas/::1647381801
+Enem_wall.tscn::PackedScene::-1::1667758381::0::1::::<><>::
+Hit Box.tscn::PackedScene::-1::1667758381::0::1::::<><>::
+Hurt Box.tscn::PackedScene::-1::1667758381::0::1::::<><>::
+::res://Objects/Dev/assets/::1667761517
+grass.png::CompressedTexture2D::3890396274932692896::1647290284::1667761517::1::::<><>::
+Skull.png::CompressedTexture2D::5879157281118694727::1647368473::1667761517::1::::<><>::
+::res://Objects/Dev/Collectables/::1659464227
+Cassette.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Sprites/Misc/shine.png<>res://Sprites/Level Ass/Cassette.png<>res://Scripts/Level Ass/Cassette.gd
+::res://Objects/Enemies/::1667770417
+Monster.tscn::PackedScene::7022573016034507115::1667770417::0::1::::<><>::uid://cy5w4k2jieat1<>uid://c27oknbk6i5jq<>uid://dhyi8ki7qrov2<>res://Scripts/Entities/Monster.gd<>res://Objects/Dev/Areas/Hit Box.tscn<>res://Objects/Dev/Areas/Hurt Box.tscn<>uid://rgtrx5h1f504
+::res://Objects/Enemies/Friendly Mon/::1667761517
+Friendly_Monster.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Enemies/Friendly Mon/Jello_slime.png<>res://Objects/Enemies/Friendly Mon/Jello_slime-bounce.png<>res://Scripts/Entities/Friendly_Monster.gd
+Friendly_Monster_walk.png::CompressedTexture2D::2886604228386947612::1647290284::1667761517::1::::<><>::
+Jello_slime-bounce.png::CompressedTexture2D::3689117450538714391::1649022852::1667761517::1::::<><>::
+Jello_slime.png::CompressedTexture2D::6591307023164436425::1649022852::1667761517::1::::<><>::
+::res://Objects/Enemies/toxic gas/::1659464227
+gas.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Sprites/Misc/gas Cloud.png
+::res://Objects/Ground/::1667770416
+Grass Tile_set.png::CompressedTexture2D::1051055624065669034::1647368473::1667761517::1::::<><>::
+Grass.tscn::PackedScene::7314372143017368714::1667770416::0::1::::<><>::uid://o8ey532661le<>uid://c6n056n33vmmt<>uid://csgebs0pph36a
+HouseSprite_Sheet.png::CompressedTexture2D::6048872457902412374::1659298670::1667761517::1::::<><>::
+::res://Objects/Player/::1663522589
+GUI.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Sprites/Level Ass/Cassette.png<>res://Scripts/Entities/Player/GUI.gd
+Player.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Sprites/Entities/Player/PlayerSprites.png<>res://Scripts/Entities/Player/Player.gd<>res://Objects/Dev/Areas/Hit Box.tscn
+::res://Rand Level Gen/::1659464337
+Interminable_UI.gd::GDScript::-1::1667758381::0::1::::<>Control<>::
+Interminable_UI.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Rand Level Gen/Interminable_UI.gd
+jig.gd::GDScript::-1::1667758381::0::1::::<>Node2D<>::
+jig.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Rand Level Gen/jig.gd
+Jigsaw_new.gd::GDScript::-1::1667758381::0::1::::<>Node2D<>::
+Jigsaw_new.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn
+Scene Start.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Ground/Grass.tscn<>res://Objects/Player/Player.tscn<>res://Rand Level Gen/Jigsaw_new.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png<>res://Rand Level Gen/Interminable_UI.tscn
+::res://Rand Level Gen/Prefabs/::1662574421
+Brandin.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Enemies/Monster.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+Fall.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Ground/Grass.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+Gas Challenge.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Ground/Grass.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+Jumping.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+maze.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Ground/Grass.tscn<>res://Objects/Enemies/Monster.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+maze_2.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Ground/Grass.tscn<>res://Objects/Enemies/Monster.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+maze_2_2.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Ground/Grass.tscn<>res://Objects/Enemies/Monster.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+Monster_Vil.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Enemies/Monster.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Background.png<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Ground/Grass Tile_set.png
+Prefabs_List.gd::GDScript::-1::1667758381::0::1::::<>Node<>::
+Spikey poison.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+Spikey.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Rand Level Gen/Jigsaw_new.gd<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+::res://Scenes/::1667770417
+Credits.tscn::PackedScene::-1::1667758380::0::1::::<><>::res://Scripts/Scenes/Credits.gd<>res://Sprites/Misc/MonsterArt.png
+Death.tscn::PackedScene::-1::1667758380::0::1::::<><>::res://Objects/Dev/assets/Skull.png<>res://Scripts/Scenes/Death.gd
+Level_Sel.tscn::PackedScene::8153883986535443796::1667770417::0::1::::<><>::res://Scripts/Scenes/Level_Sel.gd<>uid://dchev1qjfx5de<>uid://c7b10s2petlnn<>res://Objects/Player/Player.tscn<>res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Dev/InterminableStart.tscn<>res://Objects/Enemies/Friendly Mon/Friendly_Monster.tscn<>uid://o8ey532661le<>uid://c73b15dv2q30j<>uid://c6n056n33vmmt<>uid://csgebs0pph36a
+Testlevel.tscn::PackedScene::-1::1667758380::0::1::::<><>::res://Objects/Ground/Grass.tscn<>res://Objects/Player/Player.tscn<>res://Objects/Enemies/Monster.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Objects/Dev/Level End.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Player/GUI.tscn<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png<>res://Objects/Ground/HouseSprite_Sheet.png
+Title Test.tscn::PackedScene::-1::1667758380::0::1::::<><>::res://Scripts/Scenes/Title Test.gd<>res://Sprites/Misc/Title Image.png
+::res://Scenes/Levels/::1659370270
+::res://Scenes/Levels/E_Beginnings Levels/::1659464227
+Nightmare Hotel.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Ground/Grass.tscn<>res://Objects/Player/Player.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Objects/Enemies/Monster.tscn
+::res://Scenes/Levels/Original Levels/::1659464227
+Level 1.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Dev/Collectables/Cassette.tscn<>res://Background.tscn<>res://Objects/Dev/Level End.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Player/Player.tscn<>res://Objects/Player/GUI.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+Level 2.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Player/Player.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Player/GUI.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Dev/Level End.tscn
+Level 3.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Player/Player.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Dev/Level End.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Objects/Enemies/Monster.tscn
+Level 4.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Player/Player.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Enemies/Friendly Mon/Friendly_Monster.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Enemies/Monster.tscn<>res://Objects/Dev/Level End.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn
+Level 5.tscn::PackedScene::-1::1667758381::0::1::::<><>::res://Objects/Player/Player.tscn<>res://Objects/Ground/Grass.tscn<>res://Objects/Dev/Collectables/Cassette.tscn<>res://Objects/Enemies/toxic gas/gas.tscn<>res://Objects/Enemies/Monster.tscn<>res://Objects/Enemies/Friendly Mon/Friendly_Monster.tscn<>res://Objects/Dev/Level End.tscn<>res://Objects/Dev/Areas/Enem_wall.tscn<>res://Objects/Ground/HouseSprite_Sheet.png<>res://Objects/Background.png<>res://Objects/Ground/Grass Tile_set.png
+::res://Scripts/::1647888656
+::res://Scripts/Entities/::1667766962
+Friendly_Monster.gd::GDScript::-1::1667758380::0::1::::<>CharacterBody2D<>::
+Monster.gd::GDScript::-1::1667766962::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Entities/Player/::1663522583
+GUI.gd::GDScript::-1::1667758380::0::1::::<>Control<>::
+Player.gd::GDScript::-1::1667758380::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Level Ass/::1649007336
+Cassette.gd::GDScript::-1::1667758380::0::1::::<>Area2D<>::
+Level End.gd::GDScript::-1::1667758380::0::1::::<>Node2D<>::
+::res://Scripts/Scenes/::1662570566
+Credits.gd::GDScript::-1::1667758380::0::1::::<>Control<>::
+Death.gd::GDScript::-1::1667758380::0::1::::<>Control<>::
+InterminableStart.gd::GDScript::-1::1667758380::0::1::::<>Node2D<>::
+Level_Sel.gd::GDScript::-1::1667758380::0::1::::<>Control<>::
+Title Test.gd::GDScript::-1::1667758380::0::1::::<>Control<>::
+::res://Sprites/::1659284570
+::res://Sprites/Entities/::1647888656
+::res://Sprites/Entities/Enemies/::1667764657
+Monster_alt_death.png::CompressedTexture2D::6734868814425255146::1647888656::1667761517::1::::<><>::
+Monster_attack.png::CompressedTexture2D::6520693076547864864::1647888656::1667761517::1::::<><>::
+Monster_death.png::CompressedTexture2D::1206781844464065807::1647888656::1667761517::1::::<><>::
+Monster_walk.png::CompressedTexture2D::7700674228851894565::1647888656::1667764657::1::::<><>::
+::res://Sprites/Entities/Player/::1667761517
+PlayerSprites.png::CompressedTexture2D::7076795669877010523::1659369498::1667761517::1::::<><>::
+::res://Sprites/Level Ass/::1667761517
+Cassette.png::CompressedTexture2D::3365315192479468705::1647888656::1667761517::1::::<><>::
+::res://Sprites/Misc/::1667761518
+gas Cloud.png::CompressedTexture2D::3185887879235158177::1647888656::1667761516::1::::<><>::
+MonsterArt.png::CompressedTexture2D::2424727021432676184::1647888656::1667761518::1::::<><>::
+shine.png::CompressedTexture2D::1943946457531181582::1647888656::1667761516::1::::<><>::
+Skull.png::CompressedTexture2D::3370435894589260329::1647888656::1667761516::1::::<><>::
+Sky_L1.png::CompressedTexture2D::7912419931120895207::1647888656::1667761516::1::::<><>::
+Sky_L2.png::CompressedTexture2D::8206764652022401781::1647888656::1667761516::1::::<><>::
+Sky_L3.png::CompressedTexture2D::6125176818432354571::1647888656::1667761516::1::::<><>::
+Sky_L4.png::CompressedTexture2D::1457815070867472271::1647888656::1667761516::1::::<><>::
+star.png::CompressedTexture2D::892479704873281970::1647888656::1667761516::1::::<><>::
+Title Image Triford.png::CompressedTexture2D::5319048461539504333::1662586013::1667761518::1::::<><>::
+Title Image.png::CompressedTexture2D::3073428379357046045::1665972177::1667761518::1::::<><>::
+::res://Sprites/Misc/Plat Spec/::1667761517
+icon.png::CompressedTexture2D::661411325198664642::1665883160::1667761517::1::::<><>::
+PSVita Background.png::CompressedTexture2D::7018058389856272378::1665887391::1667761516::1::::<><>::
+Sprite-0002.png::CompressedTexture2D::8237467318965417864::1665887100::1667761516::1::::<><>::
+Sprite-0003.png::CompressedTexture2D::2730072470524881776::1665887122::1667761516::1::::<><>::
+Vita Icon.png::CompressedTexture2D::1520776597881007176::1665887477::1667761516::1::::<><>::

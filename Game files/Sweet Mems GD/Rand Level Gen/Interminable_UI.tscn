@@ -8,21 +8,21 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="Panel" type="Panel" parent="."]
-margin_right = 167.0
-margin_bottom = 84.0
+offset_right = 167.0
+offset_bottom = 84.0
 
 [node name="Completed" type="Label" parent="Panel"]
-margin_right = 167.0
-margin_bottom = 29.0
+offset_right = 167.0
+offset_bottom = 29.0
 text = "Sections Completed:"
 align = 1
 valign = 1
 
 [node name="Count" type="Label" parent="Panel"]
-margin_left = 2.0
-margin_top = 23.0
-margin_right = 166.0
-margin_bottom = 56.0
+offset_left = 2.0
+offset_top = 23.0
+offset_right = 166.0
+offset_bottom = 56.0
 text = "0"
 align = 1
 valign = 1

@@ -1,14 +1,14 @@
 extends Node2D
 
-export var auto = false
-onready var area = get_node("Area2D")
+@export var auto = false
+@onready var area = get_node("Area2D")
 #onready var parent = get_parent()
 
 func _ready():
 	var parent = get_parent()
 	if auto:
 		create_prefab()
-	#PrefabsList.connect("jigsaw_move", self, "move")
+	#PrefabsList.connect("jigsaw_move",Callable(self,"move"))
 	pass
 
 
@@ -22,7 +22,7 @@ func _on_Area2D_area_entered(area):
 
 func create_prefab():
 	var pref = PrefabsList.rand_prefab()
-	var prefab = load(pref).instance()
+	var prefab = load(pref).instantiate()
 	add_child(prefab)
 	#prefab.global_position = global_position
 	

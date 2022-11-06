@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Sprites/Level Ass/Cassette.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Level Ass/Cassette.png" type="Texture2D" id=1]
 [ext_resource path="res://Scripts/Entities/Player/GUI.gd" type="Script" id=2]
 
 
@@ -19,18 +19,18 @@ __meta__ = {
 [node name="Cassette Count" type="Panel" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -73.0
-margin_top = 18.0
-margin_right = -27.0
-margin_bottom = 59.0
+offset_left = -73.0
+offset_top = 18.0
+offset_right = -27.0
+offset_bottom = 59.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="Label" type="Label" parent="Cassette Count"]
 use_parent_material = true
-margin_left = 33.0
-margin_top = 16.0
-margin_right = 70.0
-margin_bottom = 34.0
+offset_left = 33.0
+offset_top = 16.0
+offset_right = 70.0
+offset_bottom = 34.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
 __meta__ = {
@@ -38,12 +38,12 @@ __meta__ = {
 }
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="Cassette Count"]
-margin_right = 103.0
-margin_bottom = 48.0
+offset_right = 103.0
+offset_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="Cassette Count/AspectRatioContainer"]
+[node name="Sprite2D" type="Sprite2D" parent="Cassette Count/AspectRatioContainer"]
 position = Vector2( 15, 23 )
 texture = ExtResource( 1 )

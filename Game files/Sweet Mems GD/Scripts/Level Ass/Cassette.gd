@@ -1,8 +1,8 @@
 extends Area2D
 
-export var ID = "Lvl0_00"
+@export var ID = "Lvl0_00"
 
-export var int_mode = false
+@export var int_mode = false
 
 func ready():
 	if FreeAccessInfo.shrodingers_cassette(ID):

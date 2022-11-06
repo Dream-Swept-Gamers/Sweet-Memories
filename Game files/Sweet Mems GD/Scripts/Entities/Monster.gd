@@ -1,11 +1,11 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-export var gravity = 1700
-export var speed = 200
-export var friction = 5
-export var jump_impulse = 150
-export var max_health = 10
-export var hostile = true
+@export var gravity = 1700
+@export var speed = 200
+@export var friction = 5
+@export var jump_impulse = 150
+@export var max_health = 10
+@export var hostile = true
 
 enum {
 	MOVE,
@@ -17,23 +17,21 @@ var cur_velocity = Vector2.ZERO
 var cur_health = max_health
 var can_jump = true
 
-export var timer_min = 0.2
-export var timer_max = 1.8
+@export var timer_min = 0.2
+@export var timer_max = 1.8
 
-export var move_type_min = 0
-export var move_type_max = 2
+@export var move_type_min = 0
+@export var move_type_max = 2
 
 var move_type = 0
 var random = RandomNumberGenerator.new()
 var die = false
 
-onready var wall_ray = get_node("CollisionShape2D/RayCast2D")
-onready var ground_ray = get_node("CollisionShape2D/RayCast2D2")
-onready var player_detect = get_node("CollisionShape2D/PlayerDetect")
-onready var animator = get_node("AnimationPlayer")
-onready var move_time = get_node("Timer")
-
-
+@onready var wall_ray = $"World Colider/Wall Ray"
+@onready var ground_ray = $"World Colider/Ground Ray"
+@onready var player_detect = $"World Colider/PlayerDetect"
+@onready var animator = $"AnimationPlayer"
+@onready var move_time = $"Timer"
 
 func _ready():
 	rand_move()
@@ -48,7 +46,9 @@ func _physics_process(delta):
 		
 		ATTACK: attack()
 		
-	cur_velocity = move_and_slide(cur_velocity)
+	set_velocity(cur_velocity)
+	move_and_slide()
+	cur_velocity = velocity
 
 func move():
 	if die:
@@ -68,6 +68,7 @@ func move():
 	else: if move_type == 2:
 		cur_velocity.x += speed
 		animator.play("Move_Right")
+		
 	
 	if wall_ray.is_colliding() and can_jump and not move_type > 2:
 		cur_velocity.y -= jump_impulse

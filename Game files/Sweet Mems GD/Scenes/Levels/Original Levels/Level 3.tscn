@@ -82,7 +82,7 @@ shape = SubResource( 1 )
 disabled = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Grass2/Area2D"]
-polygon = PoolVector2Array( -53, -31, -53, 40, -70, 40, -70, -48, 105, -47, 105, 42, 92, 42, 92, -31 )
+polygon = PackedVector2Array( -53, -31, -53, 40, -70, 40, -70, -48, 105, -47, 105, 42, 92, 42, 92, -31 )
 
 [node name="Monster" parent="Grass2/Area2D" instance=ExtResource( 7 )]
 position = Vector2( 12, 23 )
