@@ -8,22 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "GraphNode",
-"class": "CommonNode",
-"language": "GDScript",
-"path": "res://addons/project_map/pm_common_node.gd"
-}, {
-"base": "Reference",
-"class": "Discord",
-"language": "GDScript",
-"path": "res://discord_sdk/discord.gd"
-} ]
-_global_script_class_icons={
-"CommonNode": "",
-"Discord": ""
-}
-
 [addons]
 
 instance_dock/scenes=[ {
@@ -38,13 +22,15 @@ instance_dock/scenes=[ {
 "scene": "res://Objects/Enemies/Friendly Mon/Friendly_Monster.tscn"
 }, {
 "scene": "res://Objects/Dev/Collectables/Cassette.tscn"
+}, {
+"scene": "res://Objects/Dev/Areas/Enem_wall.tscn"
 } ],
 "scroll": 0
 } ]
 
 [application]
 
-config/name="Sweet Memories"
+config/name="Sweet Memories: Dreams into Nightmares"
 run/main_scene="res://Scenes/Title Test.tscn"
 config/icon="res://icon.png"
 
@@ -53,10 +39,11 @@ config/icon="res://icon.png"
 FreeAccessInfo="*res://FreeAccessInfo.gd"
 PrefabsList="*res://Rand Level Gen/Prefabs/Prefabs_List.gd"
 PlayerSaveFile="*res://Player_SaveFile.gd"
+ConsoleCommands="*res://Console_Commands.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/InstanceDock/plugin.cfg", "res://addons/project_map/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/InstanceDock/plugin.cfg", "res://addons/project_map/plugin.cfg", "res://addons/quentincaffeino/console/plugin.cfg" )
 
 [importer_defaults]
 
@@ -92,6 +79,26 @@ Move_Attack={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":90,"unicode":0,"echo":false,"script":null)
  ]
 }
+quentincaffeino_console_toggle={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":true,"meta":false,"command":true,"pressed":false,"scancode":96,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+quentincaffeino_console_autocomplete={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777218,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+quentincaffeino_console_history_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+quentincaffeino_console_history_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [layer_names]
 
@@ -110,5 +117,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/driver/fallback_to_gles2=true
+vram_compression/import_etc=true
 environment/default_clear_color=Color( 0.270588, 0.258824, 0.415686, 1 )
 environment/default_environment="res://default_env.tres"

@@ -5,6 +5,7 @@ export var speed = 200
 export var friction = 5
 export var jump_impulse = 150
 export var max_health = 10
+export var hostile = true
 
 enum {
 	MOVE,
@@ -15,6 +16,12 @@ var state = MOVE
 var cur_velocity = Vector2.ZERO
 var cur_health = max_health
 var can_jump = true
+
+export var timer_min = 0.2
+export var timer_max = 1.8
+
+export var move_type_min = 0
+export var move_type_max = 2
 
 var move_type = 0
 var random = RandomNumberGenerator.new()
@@ -47,7 +54,7 @@ func move():
 	if die:
 		pass
 	
-	if player_detect.is_colliding() and not die:
+	if player_detect.is_colliding() and hostile and not die:
 		if move_type == 1:
 			move_type = 4
 			animator.play("Attack_Left")
@@ -83,8 +90,8 @@ func is_grounded():
 		return false
 
 func rand_move():
-	move_type = FreeAccessInfo.RN_Jesus(0, 0, 2) #random.randi_range(0, 2)
-	move_time.start(FreeAccessInfo.RN_Jesus(1, 0.2, 1.8))#random.randf_range(0.2, 1.8))
+	move_type = FreeAccessInfo.RN_Jesus(0, move_type_min, move_type_max) #random.randi_range(0, 2)
+	move_time.start(FreeAccessInfo.RN_Jesus(1, timer_min, timer_max))#random.randf_range(0.2, 1.8))
 	pass
 
 func _on_Timer_timeout():

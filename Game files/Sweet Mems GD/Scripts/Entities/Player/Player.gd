@@ -23,6 +23,7 @@ onready var animator = get_node("AnimationPlayer")
 
 
 func _ready():
+	FreeAccessInfo.cur_player_instance = self
 	pass
 
 func _physics_process(delta):
