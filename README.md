@@ -1,8 +1,6 @@
 # Sweet Memories: Ensuenos
-## About
-### Skills USA
-Originally created for Skills USA: Maine 2022
-It won Third Place (Bronze)
+## Multiplayer Test
 
-It is now being developed as a hobby project
+This branch has sever-client multiplayer.
+It's unlikely it'll be released to the public, and is simply being used as a way to learn how to create such a game.
 
