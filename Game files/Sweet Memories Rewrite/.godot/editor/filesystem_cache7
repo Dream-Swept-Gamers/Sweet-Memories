@@ -1,0 +1,53 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1673561587
+icon.svg::CompressedTexture2D::8078651257213220962::1673478857::1673478862::1::::<><>::
+::res://Levels/::1673561592
+::res://Levels/Dev/::1673561592
+Test_01.tscn::PackedScene::7802370747534211987::1673561619::0::1::::<><>::
+::res://Objects/::1673479017
+::res://Objects/DEV/::1673561581
+hitbox.tscn::PackedScene::5891982104488769607::1673561562::0::1::::<><>::
+Player_0.gd::GDScript::-1::1673561542::0::1::::<>CharacterBody2D<>::
+Player_0.tscn::PackedScene::2552023410499333010::1673561638::0::1::::<><>::res://Objects/DEV/Player_0.gd<>uid://cp7ec4uq7if40<>uid://ynfhd0541dhc
+::res://Scripts/::1673559764
+::res://Scripts/Actors/::1673559751
+::res://Scripts/Actors/Player Char/::1673559751
+::res://Sprites/::1673479263
+::res://Sprites/Entities/::1673479222
+::res://Sprites/Entities/Enemies/::1673479161
+Monster_alt_death.png::CompressedTexture2D::1496409596980315094::1673479156::1673479161::1::::<><>::
+Monster_attack.png::CompressedTexture2D::8535624575843856093::1673479156::1673479161::1::::<><>::
+Monster_death.png::CompressedTexture2D::5607151408580967698::1673479156::1673479161::1::::<><>::
+Monster_walk.png::CompressedTexture2D::3698232948858166828::1673479156::1673479161::1::::<><>::
+::res://Sprites/Entities/Friendly/::1673479295
+Friendly_Monster_walk.png::CompressedTexture2D::5580445704762197833::1647290284::1673479295::1::::<><>::
+Jello_slime KIMBERLY.png::CompressedTexture2D::5187860732249075241::1649022852::1673479295::1::::<><>::
+Jello_slime-bounce KIMBERLY.png::CompressedTexture2D::8359931079251928929::1649022852::1673479295::1::::<><>::
+::res://Sprites/Entities/Player/::1673479678
+PlayerSprites.png::CompressedTexture2D::1711685441229723804::1673479156::1673479678::1::::<><>::
+::res://Sprites/Level Ass/::1673479161
+Cassette.png::CompressedTexture2D::3182330790253140858::1673479156::1673479161::1::::<><>::
+::res://Sprites/Menus/::1673479163
+MonsterArt.png::CompressedTexture2D::3509855835779176155::1673479156::1673479162::1::::<><>::
+Title Image Triford.png::CompressedTexture2D::502714790538894953::1673479156::1673479163::1::::<><>::
+Title Image.png::CompressedTexture2D::836163838097630612::1673479156::1673479163::1::::<><>::
+::res://Sprites/Menus/Plat Spec/::1673479161
+icon.png::CompressedTexture2D::8069193433858647764::1673479156::1673479161::1::::<><>::
+PSVita Background.png::CompressedTexture2D::2426988737530088094::1673479156::1673479161::1::::<><>::
+Sprite-0002.png::CompressedTexture2D::8111736781004096348::1673479156::1673479161::1::::<><>::
+Sprite-0003.png::CompressedTexture2D::8409763312774040583::1673479156::1673479161::1::::<><>::
+Vita Icon.png::CompressedTexture2D::7228593112693293476::1673479156::1673479161::1::::<><>::
+::res://Sprites/Misc/::1673479161
+Sky_L1.png::CompressedTexture2D::7064039736671661293::1673479156::1673479161::1::::<><>::
+Sky_L2.png::CompressedTexture2D::5267093368831188541::1673479156::1673479161::1::::<><>::
+Sky_L3.png::CompressedTexture2D::5284053478582633178::1673479156::1673479161::1::::<><>::
+Sky_L4.png::CompressedTexture2D::516669610678448935::1673479156::1673479161::1::::<><>::
+::res://Sprites/Particle Effects/::1673479161
+gas Cloud.png::CompressedTexture2D::8706227873168056622::1673479156::1673479161::1::::<><>::
+shine.png::CompressedTexture2D::6694579777710964201::1673479156::1673479161::1::::<><>::
+Skull.png::CompressedTexture2D::2952117150876009178::1673479156::1673479161::1::::<><>::
+star.png::CompressedTexture2D::518669941269313404::1673479156::1673479161::1::::<><>::
+::res://Sprites/Tilesets/::1673479295
+Background.png::CompressedTexture2D::8782021351644139494::1648149212::1673479295::1::::<><>::
+Grass Tile_set.png::CompressedTexture2D::1642900273616439438::1647368473::1673479295::1::::<><>::
+HouseSprite_Sheet.png::CompressedTexture2D::8337952524903215686::1659298670::1673479295::1::::<><>::
