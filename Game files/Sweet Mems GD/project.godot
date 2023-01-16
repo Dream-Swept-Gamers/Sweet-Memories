@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "GraphNode",
+"class": "CommonNode",
+"language": "GDScript",
+"path": "res://addons/project_map/pm_common_node.gd"
+}, {
+"base": "Reference",
+"class": "Discord",
+"language": "GDScript",
+"path": "res://discord_sdk/discord.gd"
+} ]
+_global_script_class_icons={
+"CommonNode": "",
+"Discord": ""
+}
+
 [addons]
 
 instance_dock/scenes=[ {
@@ -39,11 +55,12 @@ config/icon="res://icon.png"
 FreeAccessInfo="*res://FreeAccessInfo.gd"
 PrefabsList="*res://Rand Level Gen/Prefabs/Prefabs_List.gd"
 PlayerSaveFile="*res://Player_SaveFile.gd"
-ConsoleCommands="*res://Console_Commands.gd"
+Server="*res://Multiplayer/Server.gd"
+Gateway="*res://Multiplayer/Gateway.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/InstanceDock/plugin.cfg", "res://addons/project_map/plugin.cfg", "res://addons/quentincaffeino/console/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/InstanceDock/plugin.cfg", "res://addons/project_map/plugin.cfg" )
 
 [importer_defaults]
 

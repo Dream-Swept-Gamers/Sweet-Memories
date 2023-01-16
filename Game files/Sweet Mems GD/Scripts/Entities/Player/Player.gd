@@ -20,9 +20,14 @@ onready var ray_1 = get_node("CollisionShape2D/RayCast2D")
 onready var ray_2 = get_node("CollisionShape2D/RayCast2D2")
 onready var animator = get_node("AnimationPlayer")
 
+#---Multiplayer Vars---#
+onready var Player_Sprite = get_node("Sprite")
+
+var Player_Name = "Unknown Player"
 
 
 func _ready():
+	Server.FetchPlayerSprite(get_instance_id())
 	FreeAccessInfo.cur_player_instance = self
 	pass
 
@@ -69,3 +74,10 @@ func is_grounded():
 
 func _on_KillBox_area_entered(area):
 	get_tree().change_scene("res://Scenes/Death.tscn")
+
+#---Multiplayer Functinos---#
+func Recieve_Info(sprite_name, player_name):
+	print("Player info Recieved!")
+	var Sprite_Path = "res://Sprites/Entities/Player/" + sprite_name
+	Player_Sprite.texture = load(Sprite_Path)
+	Player_Name = player_name
