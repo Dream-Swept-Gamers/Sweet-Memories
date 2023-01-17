@@ -28,6 +28,6 @@ func AuthenticatePlayer(username, password, player_id):
 	rpc_id(1, "AuthenticatePlayer", username, password, player_id)
 
 
-remote func AuthenticationResults(result, player_id):
+remote func AuthenticationResults(result, player_id, token):
 	print("results recieved and replying to player login request")
-	Gateway.ReturnLoginRequest(result, player_id)
+	Gateway.ReturnLoginRequest(result, player_id, token)

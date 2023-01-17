@@ -46,8 +46,8 @@ instance_dock/scenes=[ {
 
 [application]
 
-config/name="Sweet Memories: Dreams into Nightmares"
-run/main_scene="res://Scenes/Title Test.tscn"
+config/name="Sweet Memories: Multiplayer Test"
+run/main_scene="res://Multiplayer/Scene Handler.tscn"
 config/icon="res://icon.png"
 
 [autoload]

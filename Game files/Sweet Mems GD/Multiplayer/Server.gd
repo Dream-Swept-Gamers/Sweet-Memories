@@ -5,6 +5,8 @@ var ip = "127.0.0.1"
 #var ip = "192.168.0.1"
 var port = 1909
 
+var token
+
 func _ready():
 	pass
 	#ConnectToServer()
@@ -23,6 +25,9 @@ func _OnConnectionFailed():
 
 func _OnConnectionSucceeded():
 	print("Successfully connected")
+
+remote func FetchToken():
+	rpc_id(1, "ReturnToken", token)
 
 #Note:
 #All data that originated on server must be prefixed with rm_

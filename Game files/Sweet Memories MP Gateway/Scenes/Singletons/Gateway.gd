@@ -41,6 +41,6 @@ remote func LoginRequest(username, password):
 	Authenticate.AuthenticatePlayer(username, password, player_id)
 
 
-func ReturnLoginRequest(result, player_id):
-	rpc_id(player_id, "ReturnLoginRequest", result)
+func ReturnLoginRequest(result, player_id, token):
+	rpc_id(player_id, "ReturnLoginRequest", result, token)
 	network.disconnect_peer(player_id)

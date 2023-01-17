@@ -9,6 +9,7 @@ var username
 var password
 
 var LoginScreen = "/root/LoginScreen"
+onready var SceneHandler = get_node("/root/Scene Handler")
 
 func _ready():
 	pass
@@ -54,11 +55,12 @@ func RequestLogin():
 	password = ""
 
 
-remote func ReturnLoginRequest(results):
+remote func ReturnLoginRequest(results, token):
 	print("result received")
 	if results == true:
+		Server.token = token
 		Server.ConnectToServer()
-		get_node(LoginScreen)
+		SceneHandler.Remove_Children()
 	else:
 		print("Login incorrect")
 		get_node(LoginScreen).login_button.disabled = false
